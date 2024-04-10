@@ -12,6 +12,9 @@ File Encoding         : 65001
 
 Date: 2024-04-11 01:38:06
 */
+CREATE DATABASE IF NOT EXISTS students CHARACTER SET utf8 COLLATE utf8_general_ci;
+
+USE students;
 
 SET FOREIGN_KEY_CHECKS=0;
 
