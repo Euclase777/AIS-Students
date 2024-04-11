@@ -1,0 +1,103 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Lenovo\\Documents\\GitHub\\Foreign\\AIS-Students\\AIS-Students\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2F129AA6-D163-4932-BDD7-39D0E5CE8821}|AIS-Students\\AIS-Students.csproj|c:\\users\\lenovo\\documents\\github\\foreign\\ais-students\\ais-students\\ais-students\\formadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2F129AA6-D163-4932-BDD7-39D0E5CE8821}|AIS-Students\\AIS-Students.csproj|solutionrelative:ais-students\\formadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F129AA6-D163-4932-BDD7-39D0E5CE8821}|AIS-Students\\AIS-Students.csproj|c:\\users\\lenovo\\documents\\github\\foreign\\ais-students\\ais-students\\ais-students\\formadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F129AA6-D163-4932-BDD7-39D0E5CE8821}|AIS-Students\\AIS-Students.csproj|solutionrelative:ais-students\\formadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F129AA6-D163-4932-BDD7-39D0E5CE8821}|AIS-Students\\AIS-Students.csproj|c:\\users\\lenovo\\documents\\github\\foreign\\ais-students\\ais-students\\ais-students\\formadmin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F129AA6-D163-4932-BDD7-39D0E5CE8821}|AIS-Students\\AIS-Students.csproj|solutionrelative:ais-students\\formadmin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F129AA6-D163-4932-BDD7-39D0E5CE8821}|AIS-Students\\AIS-Students.csproj|C:\\Users\\Lenovo\\Documents\\GitHub\\Foreign\\AIS-Students\\AIS-Students\\ais-students\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2F129AA6-D163-4932-BDD7-39D0E5CE8821}|AIS-Students\\AIS-Students.csproj|solutionrelative:ais-students\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F129AA6-D163-4932-BDD7-39D0E5CE8821}|AIS-Students\\AIS-Students.csproj|c:\\users\\lenovo\\documents\\github\\foreign\\ais-students\\ais-students\\ais-students\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F129AA6-D163-4932-BDD7-39D0E5CE8821}|AIS-Students\\AIS-Students.csproj|solutionrelative:ais-students\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FormAdmin.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\GitHub\\Foreign\\AIS-Students\\AIS-Students\\AIS-Students\\FormAdmin.Designer.cs",
+              "RelativeDocumentMoniker": "AIS-Students\\FormAdmin.Designer.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Documents\\GitHub\\Foreign\\AIS-Students\\AIS-Students\\AIS-Students\\FormAdmin.Designer.cs",
+              "RelativeToolTip": "AIS-Students\\FormAdmin.Designer.cs",
+              "ViewState": "AQIAADwDAAAAAAAAAAAQwEcDAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-11T17:15:37.51Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\GitHub\\Foreign\\AIS-Students\\AIS-Students\\AIS-Students\\Form1.cs",
+              "RelativeDocumentMoniker": "AIS-Students\\Form1.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Documents\\GitHub\\Foreign\\AIS-Students\\AIS-Students\\AIS-Students\\Form1.cs",
+              "RelativeToolTip": "AIS-Students\\Form1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-11T04:49:40.817Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormAdmin.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\GitHub\\Foreign\\AIS-Students\\AIS-Students\\AIS-Students\\FormAdmin.cs",
+              "RelativeDocumentMoniker": "AIS-Students\\FormAdmin.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Documents\\GitHub\\Foreign\\AIS-Students\\AIS-Students\\AIS-Students\\FormAdmin.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "AIS-Students\\FormAdmin.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-11T11:06:12.877Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormAdmin.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\GitHub\\Foreign\\AIS-Students\\AIS-Students\\AIS-Students\\FormAdmin.cs",
+              "RelativeDocumentMoniker": "AIS-Students\\FormAdmin.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Documents\\GitHub\\Foreign\\AIS-Students\\AIS-Students\\AIS-Students\\FormAdmin.cs",
+              "RelativeToolTip": "AIS-Students\\FormAdmin.cs",
+              "ViewState": "AQIAAFQAAAAAAAAAAAAQwGAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-11T11:38:58.357Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\GitHub\\Foreign\\AIS-Students\\AIS-Students\\AIS-Students\\Form1.cs",
+              "RelativeDocumentMoniker": "AIS-Students\\Form1.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Documents\\GitHub\\Foreign\\AIS-Students\\AIS-Students\\AIS-Students\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "AIS-Students\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-11T04:49:41.872Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

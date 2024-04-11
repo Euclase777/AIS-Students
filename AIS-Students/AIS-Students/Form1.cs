@@ -65,6 +65,9 @@ namespace AIS_Students
                 switch (levelOfAccess)
                 {
                     case 0:
+                        FormAdmin formAdmin = new FormAdmin();
+                        formAdmin.Show();
+                        this.Hide();
                         break;
                     case 1:
                         break;
@@ -79,6 +82,11 @@ namespace AIS_Students
             {
                 MessageBox.Show("Неверный логин или пароль, пожалуйста, попробуйте снова или обратитесь к администратору", "Ошибка авторизации", MessageBoxButtons.OK);
             }
+        }
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
