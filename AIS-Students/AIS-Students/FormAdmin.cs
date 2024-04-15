@@ -112,13 +112,13 @@ namespace AIS_Students
                             checkedListBoxGroupStudentAdmin.Items.Add(new StringItemWithOldID()
                             {
                                 OldID = Convert.ToInt16(row[0]),
-                                text = Convert.ToString(row[2]) + Convert.ToString(row[1])
+                                text = Convert.ToString(row[1])
                             });
                         }
                     }
                 }
             }
-            using (MySqlCommand cmd = new MySqlCommand("SELECT ID_Student, FIO as `ФИО студента`, ID_Group FROM students", conn))
+            using (MySqlCommand cmd = new MySqlCommand("SELECT ID_Student, FIO as `ФИО студента`, CONCAT(Faculty,'-',`Group`) as `Группа`\r\nFROM students\r\nJOIN groups ON students.ID_Group = groups.ID_Group;", conn))
             {
                 cmd.CommandType = CommandType.Text;
                 using (MySqlDataAdapter sda = new MySqlDataAdapter(cmd))
@@ -143,6 +143,14 @@ namespace AIS_Students
             if (Convert.ToString(dataGridViewStudentAdmin.CurrentRow.Cells[0].Value) != "")
             {
                 
+                textBoxStudentNameAdmin.Text = Convert.ToString(dataGridViewStudentAdmin.CurrentRow.Cells[1].Value);
+                for(int i = 0; i < checkedListBoxGroupStudentAdmin.Items.Count; i++)
+                {
+                    if (Convert.ToString(dataGridViewStudentAdmin.CurrentRow.Cells[2].Value) == Convert.ToString(checkedListBoxGroupStudentAdmin.Items[i]))
+                    {
+                        checkedListBoxGroupStudentAdmin.SetItemChecked(i, true);
+                    }
+                }
             }
         }
     }

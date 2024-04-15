@@ -84,3 +84,4 @@ C:\Users\Lenovo\Documents\GitHub\Foreign\AIS-Students\AIS-Students\AIS-Students\
 C:\Users\Lenovo\Documents\GitHub\Foreign\AIS-Students\AIS-Students\AIS-Students\obj\Debug\AIS-Students.exe
 C:\Users\Lenovo\Documents\GitHub\Foreign\AIS-Students\AIS-Students\AIS-Students\obj\Debug\AIS-Students.pdb
 C:\Users\Lenovo\Documents\GitHub\Foreign\AIS-Students\AIS-Students\AIS-Students\obj\Debug\AIS_Students.FormAdmin.resources
+C:\Users\Euclase777\Documents\GitHub\AIS-Students\AIS-Students\AIS-Students\obj\Debug\AIS_Students.FormAdmin.resources

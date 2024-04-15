@@ -87,6 +87,7 @@
             this.textBoxAuthPassword.PasswordChar = '*';
             this.textBoxAuthPassword.Size = new System.Drawing.Size(230, 32);
             this.textBoxAuthPassword.TabIndex = 7;
+            this.textBoxAuthPassword.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxAuthPassword_KeyPress);
             // 
             // textBoxAuthLogin
             // 

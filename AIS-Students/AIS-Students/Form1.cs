@@ -88,5 +88,13 @@ namespace AIS_Students
         {
             Application.Exit();
         }
+
+        private void textBoxAuthPassword_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13 && AuthPanel.Visible == true)
+            {
+                buttonAuthEnter.PerformClick();
+            }
+        }
     }
 }
