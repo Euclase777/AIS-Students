@@ -55,7 +55,7 @@ namespace AIS_Students
         {
             panelGroupAdmin.Visible = true;
             panelServicesAdministrator.Visible = false;
-            panelStorageAdministrator.Visible = false;
+            panelStudentAdmin.Visible = false;
             panelWorkersAdministrator.Visible = false;
             panelAuthorizationAdministrator.Visible = false;
             textBoxGroupNameAdmin.Text = "";
@@ -94,7 +94,56 @@ namespace AIS_Students
 
         private void buttonStudentsAdmin_Click(object sender, EventArgs e)
         {
+            panelGroupAdmin.Visible = false;
+            panelStudentAdmin.Visible = true;
+            textBoxStudentNameAdmin.Text = "";
+            checkedListBoxGroupStudentAdmin.Items.Clear();
+            MySqlConnection conn = DBUtils.GetDBConnection();
+            using (MySqlCommand cmd = new MySqlCommand("SELECT ID_Group,CONCAT(Faculty,'-',`Group`) FROM groups", conn))
+            {
+                cmd.CommandType = CommandType.Text;
+                using (MySqlDataAdapter sda = new MySqlDataAdapter(cmd))
+                {
+                    using (DataTable dt = new DataTable())
+                    {
+                        sda.Fill(dt);
+                        foreach (DataRow row in dt.Rows)
+                        {
+                            checkedListBoxGroupStudentAdmin.Items.Add(new StringItemWithOldID()
+                            {
+                                OldID = Convert.ToInt16(row[0]),
+                                text = Convert.ToString(row[2]) + Convert.ToString(row[1])
+                            });
+                        }
+                    }
+                }
+            }
+            using (MySqlCommand cmd = new MySqlCommand("SELECT ID_Student, FIO as `ФИО студента`, ID_Group FROM students", conn))
+            {
+                cmd.CommandType = CommandType.Text;
+                using (MySqlDataAdapter sda = new MySqlDataAdapter(cmd))
+                {
+                    using (DataTable dt = new DataTable())
+                    {
+                        sda.Fill(dt);
+                        dataGridViewStudentAdmin.DataSource = dt;
+                        dataGridViewStudentAdmin.Columns[0].Visible = false;
+                    }
+                }
+            }
 
+        }
+
+        private void dataGridViewStudentAdmin_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            foreach (int i in checkedListBoxGroupStudentAdmin.CheckedIndices)
+            {
+                checkedListBoxGroupStudentAdmin.SetItemCheckState(i, CheckState.Unchecked);
+            }
+            if (Convert.ToString(dataGridViewStudentAdmin.CurrentRow.Cells[0].Value) != "")
+            {
+                
+            }
         }
     }
 }

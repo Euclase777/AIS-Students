@@ -87,21 +87,20 @@
             this.label9 = new System.Windows.Forms.Label();
             this.textBoxServicesNameAdministrator = new System.Windows.Forms.TextBox();
             this.dataGridViewServicesServicesAdministrator = new System.Windows.Forms.DataGridView();
-            this.panelStorageAdministrator = new System.Windows.Forms.Panel();
-            this.buttonStorageCreateAdministrator = new System.Windows.Forms.Button();
-            this.buttonStorageDeleteAdministrator = new System.Windows.Forms.Button();
-            this.buttonStorageSaveAdministrator = new System.Windows.Forms.Button();
-            this.label11 = new System.Windows.Forms.Label();
-            this.textBoxStorageAmountAdministrator = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.textBoxStorageNameAdministrator = new System.Windows.Forms.TextBox();
-            this.dataGridViewStorageAdministrator = new System.Windows.Forms.DataGridView();
+            this.panelStudentAdmin = new System.Windows.Forms.Panel();
+            this.buttonStudentCreateAdmin = new System.Windows.Forms.Button();
+            this.buttonStudentDeleteAdmin = new System.Windows.Forms.Button();
+            this.labelStudentNameAdmin = new System.Windows.Forms.Label();
+            this.textBoxStudentNameAdmin = new System.Windows.Forms.TextBox();
+            this.dataGridViewStudentAdmin = new System.Windows.Forms.DataGridView();
             this.panelSidebarAdmin = new System.Windows.Forms.Panel();
             this.buttonGroupAdmin = new System.Windows.Forms.Button();
             this.buttonStudentsAdmin = new System.Windows.Forms.Button();
             this.buttonTeachersAdmin = new System.Windows.Forms.Button();
             this.buttonAdminAdmin = new System.Windows.Forms.Button();
             this.buttonAuthAdmin = new System.Windows.Forms.Button();
+            this.checkedListBoxGroupStudentAdmin = new System.Windows.Forms.CheckedListBox();
+            this.labelGroupsAdmin = new System.Windows.Forms.Label();
             this.panelMainAdmin.SuspendLayout();
             this.panelGroupAdmin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewGroupAdmin)).BeginInit();
@@ -113,18 +112,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewServicesServicesPartsAdministrator)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewServicesPartsAdministrator)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewServicesServicesAdministrator)).BeginInit();
-            this.panelStorageAdministrator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewStorageAdministrator)).BeginInit();
+            this.panelStudentAdmin.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewStudentAdmin)).BeginInit();
             this.panelSidebarAdmin.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMainAdmin
             // 
+            this.panelMainAdmin.Controls.Add(this.panelStudentAdmin);
             this.panelMainAdmin.Controls.Add(this.panelGroupAdmin);
             this.panelMainAdmin.Controls.Add(this.panelAuthorizationAdministrator);
             this.panelMainAdmin.Controls.Add(this.panelWorkersAdministrator);
             this.panelMainAdmin.Controls.Add(this.panelServicesAdministrator);
-            this.panelMainAdmin.Controls.Add(this.panelStorageAdministrator);
             this.panelMainAdmin.Location = new System.Drawing.Point(189, 0);
             this.panelMainAdmin.Name = "panelMainAdmin";
             this.panelMainAdmin.Size = new System.Drawing.Size(912, 700);
@@ -685,92 +684,67 @@
             this.dataGridViewServicesServicesAdministrator.Size = new System.Drawing.Size(399, 499);
             this.dataGridViewServicesServicesAdministrator.TabIndex = 0;
             // 
-            // panelStorageAdministrator
+            // panelStudentAdmin
             // 
-            this.panelStorageAdministrator.Controls.Add(this.buttonStorageCreateAdministrator);
-            this.panelStorageAdministrator.Controls.Add(this.buttonStorageDeleteAdministrator);
-            this.panelStorageAdministrator.Controls.Add(this.buttonStorageSaveAdministrator);
-            this.panelStorageAdministrator.Controls.Add(this.label11);
-            this.panelStorageAdministrator.Controls.Add(this.textBoxStorageAmountAdministrator);
-            this.panelStorageAdministrator.Controls.Add(this.label14);
-            this.panelStorageAdministrator.Controls.Add(this.textBoxStorageNameAdministrator);
-            this.panelStorageAdministrator.Controls.Add(this.dataGridViewStorageAdministrator);
-            this.panelStorageAdministrator.Location = new System.Drawing.Point(41, 21);
-            this.panelStorageAdministrator.Name = "panelStorageAdministrator";
-            this.panelStorageAdministrator.Size = new System.Drawing.Size(805, 668);
-            this.panelStorageAdministrator.TabIndex = 5;
-            this.panelStorageAdministrator.Visible = false;
+            this.panelStudentAdmin.Controls.Add(this.labelGroupsAdmin);
+            this.panelStudentAdmin.Controls.Add(this.checkedListBoxGroupStudentAdmin);
+            this.panelStudentAdmin.Controls.Add(this.buttonStudentCreateAdmin);
+            this.panelStudentAdmin.Controls.Add(this.buttonStudentDeleteAdmin);
+            this.panelStudentAdmin.Controls.Add(this.labelStudentNameAdmin);
+            this.panelStudentAdmin.Controls.Add(this.textBoxStudentNameAdmin);
+            this.panelStudentAdmin.Controls.Add(this.dataGridViewStudentAdmin);
+            this.panelStudentAdmin.Location = new System.Drawing.Point(0, 0);
+            this.panelStudentAdmin.Name = "panelStudentAdmin";
+            this.panelStudentAdmin.Size = new System.Drawing.Size(805, 668);
+            this.panelStudentAdmin.TabIndex = 5;
+            this.panelStudentAdmin.Visible = false;
             // 
-            // buttonStorageCreateAdministrator
+            // buttonStudentCreateAdmin
             // 
-            this.buttonStorageCreateAdministrator.Location = new System.Drawing.Point(33, 585);
-            this.buttonStorageCreateAdministrator.Name = "buttonStorageCreateAdministrator";
-            this.buttonStorageCreateAdministrator.Size = new System.Drawing.Size(129, 38);
-            this.buttonStorageCreateAdministrator.TabIndex = 8;
-            this.buttonStorageCreateAdministrator.Text = "Создать новую деталь";
-            this.buttonStorageCreateAdministrator.UseVisualStyleBackColor = true;
+            this.buttonStudentCreateAdmin.Location = new System.Drawing.Point(33, 585);
+            this.buttonStudentCreateAdmin.Name = "buttonStudentCreateAdmin";
+            this.buttonStudentCreateAdmin.Size = new System.Drawing.Size(129, 38);
+            this.buttonStudentCreateAdmin.TabIndex = 8;
+            this.buttonStudentCreateAdmin.Text = "Добавить студента";
+            this.buttonStudentCreateAdmin.UseVisualStyleBackColor = true;
             // 
-            // buttonStorageDeleteAdministrator
+            // buttonStudentDeleteAdmin
             // 
-            this.buttonStorageDeleteAdministrator.Location = new System.Drawing.Point(303, 585);
-            this.buttonStorageDeleteAdministrator.Name = "buttonStorageDeleteAdministrator";
-            this.buttonStorageDeleteAdministrator.Size = new System.Drawing.Size(129, 38);
-            this.buttonStorageDeleteAdministrator.TabIndex = 10;
-            this.buttonStorageDeleteAdministrator.Text = "Удалить выбранную деталь";
-            this.buttonStorageDeleteAdministrator.UseVisualStyleBackColor = true;
+            this.buttonStudentDeleteAdmin.Location = new System.Drawing.Point(168, 585);
+            this.buttonStudentDeleteAdmin.Name = "buttonStudentDeleteAdmin";
+            this.buttonStudentDeleteAdmin.Size = new System.Drawing.Size(129, 38);
+            this.buttonStudentDeleteAdmin.TabIndex = 10;
+            this.buttonStudentDeleteAdmin.Text = "Удалить студента";
+            this.buttonStudentDeleteAdmin.UseVisualStyleBackColor = true;
             // 
-            // buttonStorageSaveAdministrator
+            // labelStudentNameAdmin
             // 
-            this.buttonStorageSaveAdministrator.Location = new System.Drawing.Point(168, 585);
-            this.buttonStorageSaveAdministrator.Name = "buttonStorageSaveAdministrator";
-            this.buttonStorageSaveAdministrator.Size = new System.Drawing.Size(129, 38);
-            this.buttonStorageSaveAdministrator.TabIndex = 8;
-            this.buttonStorageSaveAdministrator.Text = "Сохранить изменения выбранной детали";
-            this.buttonStorageSaveAdministrator.UseVisualStyleBackColor = true;
+            this.labelStudentNameAdmin.AutoSize = true;
+            this.labelStudentNameAdmin.Location = new System.Drawing.Point(33, 535);
+            this.labelStudentNameAdmin.Name = "labelStudentNameAdmin";
+            this.labelStudentNameAdmin.Size = new System.Drawing.Size(82, 13);
+            this.labelStudentNameAdmin.TabIndex = 4;
+            this.labelStudentNameAdmin.Text = "ФИО студента";
             // 
-            // label11
+            // textBoxStudentNameAdmin
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(300, 535);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(131, 13);
-            this.label11.TabIndex = 8;
-            this.label11.Text = "Оставшееся количество";
+            this.textBoxStudentNameAdmin.Location = new System.Drawing.Point(33, 559);
+            this.textBoxStudentNameAdmin.Name = "textBoxStudentNameAdmin";
+            this.textBoxStudentNameAdmin.Size = new System.Drawing.Size(264, 20);
+            this.textBoxStudentNameAdmin.TabIndex = 3;
             // 
-            // textBoxStorageAmountAdministrator
+            // dataGridViewStudentAdmin
             // 
-            this.textBoxStorageAmountAdministrator.Location = new System.Drawing.Point(303, 559);
-            this.textBoxStorageAmountAdministrator.Name = "textBoxStorageAmountAdministrator";
-            this.textBoxStorageAmountAdministrator.Size = new System.Drawing.Size(129, 20);
-            this.textBoxStorageAmountAdministrator.TabIndex = 4;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(33, 535);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(95, 13);
-            this.label14.TabIndex = 4;
-            this.label14.Text = "Название детали";
-            // 
-            // textBoxStorageNameAdministrator
-            // 
-            this.textBoxStorageNameAdministrator.Location = new System.Drawing.Point(33, 559);
-            this.textBoxStorageNameAdministrator.Name = "textBoxStorageNameAdministrator";
-            this.textBoxStorageNameAdministrator.Size = new System.Drawing.Size(264, 20);
-            this.textBoxStorageNameAdministrator.TabIndex = 3;
-            // 
-            // dataGridViewStorageAdministrator
-            // 
-            this.dataGridViewStorageAdministrator.AllowUserToDeleteRows = false;
-            this.dataGridViewStorageAdministrator.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridViewStorageAdministrator.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewStorageAdministrator.Location = new System.Drawing.Point(33, 21);
-            this.dataGridViewStorageAdministrator.MultiSelect = false;
-            this.dataGridViewStorageAdministrator.Name = "dataGridViewStorageAdministrator";
-            this.dataGridViewStorageAdministrator.ReadOnly = true;
-            this.dataGridViewStorageAdministrator.Size = new System.Drawing.Size(751, 499);
-            this.dataGridViewStorageAdministrator.TabIndex = 0;
+            this.dataGridViewStudentAdmin.AllowUserToDeleteRows = false;
+            this.dataGridViewStudentAdmin.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewStudentAdmin.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewStudentAdmin.Location = new System.Drawing.Point(33, 21);
+            this.dataGridViewStudentAdmin.MultiSelect = false;
+            this.dataGridViewStudentAdmin.Name = "dataGridViewStudentAdmin";
+            this.dataGridViewStudentAdmin.ReadOnly = true;
+            this.dataGridViewStudentAdmin.Size = new System.Drawing.Size(751, 499);
+            this.dataGridViewStudentAdmin.TabIndex = 0;
+            this.dataGridViewStudentAdmin.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewStudentAdmin_CellClick);
             // 
             // panelSidebarAdmin
             // 
@@ -852,6 +826,23 @@
             this.buttonAuthAdmin.Text = "Логины";
             this.buttonAuthAdmin.UseVisualStyleBackColor = true;
             // 
+            // checkedListBoxGroupStudentAdmin
+            // 
+            this.checkedListBoxGroupStudentAdmin.FormattingEnabled = true;
+            this.checkedListBoxGroupStudentAdmin.Location = new System.Drawing.Point(321, 559);
+            this.checkedListBoxGroupStudentAdmin.Name = "checkedListBoxGroupStudentAdmin";
+            this.checkedListBoxGroupStudentAdmin.Size = new System.Drawing.Size(120, 94);
+            this.checkedListBoxGroupStudentAdmin.TabIndex = 11;
+            // 
+            // labelGroupsAdmin
+            // 
+            this.labelGroupsAdmin.AutoSize = true;
+            this.labelGroupsAdmin.Location = new System.Drawing.Point(318, 535);
+            this.labelGroupsAdmin.Name = "labelGroupsAdmin";
+            this.labelGroupsAdmin.Size = new System.Drawing.Size(44, 13);
+            this.labelGroupsAdmin.TabIndex = 12;
+            this.labelGroupsAdmin.Text = "Группы";
+            // 
             // FormAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -880,9 +871,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewServicesServicesPartsAdministrator)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewServicesPartsAdministrator)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewServicesServicesAdministrator)).EndInit();
-            this.panelStorageAdministrator.ResumeLayout(false);
-            this.panelStorageAdministrator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewStorageAdministrator)).EndInit();
+            this.panelStudentAdmin.ResumeLayout(false);
+            this.panelStudentAdmin.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewStudentAdmin)).EndInit();
             this.panelSidebarAdmin.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -939,15 +930,12 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox textBoxServicesNameAdministrator;
         private System.Windows.Forms.DataGridView dataGridViewServicesServicesAdministrator;
-        private System.Windows.Forms.Panel panelStorageAdministrator;
-        private System.Windows.Forms.Button buttonStorageCreateAdministrator;
-        private System.Windows.Forms.Button buttonStorageDeleteAdministrator;
-        private System.Windows.Forms.Button buttonStorageSaveAdministrator;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBoxStorageAmountAdministrator;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBoxStorageNameAdministrator;
-        private System.Windows.Forms.DataGridView dataGridViewStorageAdministrator;
+        private System.Windows.Forms.Panel panelStudentAdmin;
+        private System.Windows.Forms.Button buttonStudentCreateAdmin;
+        private System.Windows.Forms.Button buttonStudentDeleteAdmin;
+        private System.Windows.Forms.Label labelStudentNameAdmin;
+        private System.Windows.Forms.TextBox textBoxStudentNameAdmin;
+        private System.Windows.Forms.DataGridView dataGridViewStudentAdmin;
         private System.Windows.Forms.Panel panelGroupAdmin;
         private System.Windows.Forms.Button buttonGroupCreateAdmin;
         private System.Windows.Forms.Button buttonGroupDeleteAdmin;
@@ -964,5 +952,7 @@
         private System.Windows.Forms.Button buttonStudentsAdmin;
         private System.Windows.Forms.Button buttonGroupAdmin;
         private System.Windows.Forms.TextBox textBoxGroupClassAdmin;
+        private System.Windows.Forms.Label labelGroupsAdmin;
+        private System.Windows.Forms.CheckedListBox checkedListBoxGroupStudentAdmin;
     }
 }
