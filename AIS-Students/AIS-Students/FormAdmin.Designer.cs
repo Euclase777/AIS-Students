@@ -29,6 +29,28 @@
         private void InitializeComponent()
         {
             this.panelMainAdmin = new System.Windows.Forms.Panel();
+            this.panelAdminsAdmin = new System.Windows.Forms.Panel();
+            this.buttonAdminsAddAdmin = new System.Windows.Forms.Button();
+            this.buttonAdminsDeleteAdmin = new System.Windows.Forms.Button();
+            this.buttonAdminsEditAdmin = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBoxAdminsFIOAdmin = new System.Windows.Forms.TextBox();
+            this.dataGridViewAdminsAdmin = new System.Windows.Forms.DataGridView();
+            this.panelTeachersAdmin = new System.Windows.Forms.Panel();
+            this.buttonTeacherAddAdmin = new System.Windows.Forms.Button();
+            this.buttonTeacherDeleteAdmin = new System.Windows.Forms.Button();
+            this.buttonTeacherEditAdmin = new System.Windows.Forms.Button();
+            this.label17 = new System.Windows.Forms.Label();
+            this.textBoxTeacherFIOAdmin = new System.Windows.Forms.TextBox();
+            this.dataGridViewTeacherAdmin = new System.Windows.Forms.DataGridView();
+            this.panelStudentAdmin = new System.Windows.Forms.Panel();
+            this.labelGroupsAdmin = new System.Windows.Forms.Label();
+            this.checkedListBoxGroupStudentAdmin = new System.Windows.Forms.CheckedListBox();
+            this.buttonStudentCreateAdmin = new System.Windows.Forms.Button();
+            this.buttonStudentDeleteAdmin = new System.Windows.Forms.Button();
+            this.labelStudentNameAdmin = new System.Windows.Forms.Label();
+            this.textBoxStudentNameAdmin = new System.Windows.Forms.TextBox();
+            this.dataGridViewStudentAdmin = new System.Windows.Forms.DataGridView();
             this.panelGroupAdmin = new System.Windows.Forms.Panel();
             this.textBoxGroupClassAdmin = new System.Windows.Forms.TextBox();
             this.buttonGroupCreateAdmin = new System.Windows.Forms.Button();
@@ -39,95 +61,262 @@
             this.labelGroupFacultyAdmin = new System.Windows.Forms.Label();
             this.textBoxGroupFacultyAdmin = new System.Windows.Forms.TextBox();
             this.dataGridViewGroupAdmin = new System.Windows.Forms.DataGridView();
-            this.panelAuthorizationAdministrator = new System.Windows.Forms.Panel();
-            this.comboBoxWorkersWorkersAdministrator = new System.Windows.Forms.ComboBox();
-            this.comboBoxWorkersAccessAdministrator = new System.Windows.Forms.ComboBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.textBoxAuthorizationPasswordAdministrator = new System.Windows.Forms.TextBox();
-            this.buttonAuthorizationCreateAdministrator = new System.Windows.Forms.Button();
-            this.buttonAuthorizationDeleteAdministrator = new System.Windows.Forms.Button();
-            this.buttonAuthorizationSaveAdministrator = new System.Windows.Forms.Button();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.textBoxAuthorizationLoginAdministrator = new System.Windows.Forms.TextBox();
-            this.dataGridViewAuthorizationAdministrator = new System.Windows.Forms.DataGridView();
-            this.panelWorkersAdministrator = new System.Windows.Forms.Panel();
-            this.label19 = new System.Windows.Forms.Label();
-            this.textBoxWorkersSalaryAdministrator = new System.Windows.Forms.TextBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.textBoxWorkersSurnameAdministrator = new System.Windows.Forms.TextBox();
-            this.buttonWorkersCreateAdministrator = new System.Windows.Forms.Button();
-            this.buttonWorkersDeleteAdministrator = new System.Windows.Forms.Button();
-            this.buttonWorkersSaveAdministrator = new System.Windows.Forms.Button();
-            this.label16 = new System.Windows.Forms.Label();
-            this.textBoxWorkersProfessionAdministrator = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.textBoxWorkersNameAdministrator = new System.Windows.Forms.TextBox();
-            this.dataGridViewWorkersAdministrator = new System.Windows.Forms.DataGridView();
-            this.panelServicesAdministrator = new System.Windows.Forms.Panel();
-            this.label12 = new System.Windows.Forms.Label();
-            this.textBoxServicesPartIDAdministrator = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.textBoxServicesAmountAdministrator = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.textBoxServicesServiceIDAdministrator = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.textBoxServicesPriceAdministrator = new System.Windows.Forms.TextBox();
-            this.buttonServicesCreateLinkAdministrator = new System.Windows.Forms.Button();
-            this.buttonServicesDeleteLinktAdministrator = new System.Windows.Forms.Button();
-            this.buttonServicesAlterLinkAdministrator = new System.Windows.Forms.Button();
-            this.dataGridViewServicesServicesPartsAdministrator = new System.Windows.Forms.DataGridView();
-            this.dataGridViewServicesPartsAdministrator = new System.Windows.Forms.DataGridView();
-            this.buttonServicesCreateServiceAdministrator = new System.Windows.Forms.Button();
-            this.buttonServicesDeleteServiceAdministrator = new System.Windows.Forms.Button();
-            this.buttonServicesSaveServiceAdministrator = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBoxServicesTimeAdministrator = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.textBoxServicesNameAdministrator = new System.Windows.Forms.TextBox();
-            this.dataGridViewServicesServicesAdministrator = new System.Windows.Forms.DataGridView();
-            this.panelStudentAdmin = new System.Windows.Forms.Panel();
-            this.buttonStudentCreateAdmin = new System.Windows.Forms.Button();
-            this.buttonStudentDeleteAdmin = new System.Windows.Forms.Button();
-            this.labelStudentNameAdmin = new System.Windows.Forms.Label();
-            this.textBoxStudentNameAdmin = new System.Windows.Forms.TextBox();
-            this.dataGridViewStudentAdmin = new System.Windows.Forms.DataGridView();
             this.panelSidebarAdmin = new System.Windows.Forms.Panel();
             this.buttonGroupAdmin = new System.Windows.Forms.Button();
             this.buttonStudentsAdmin = new System.Windows.Forms.Button();
             this.buttonTeachersAdmin = new System.Windows.Forms.Button();
             this.buttonAdminAdmin = new System.Windows.Forms.Button();
-            this.buttonAuthAdmin = new System.Windows.Forms.Button();
-            this.checkedListBoxGroupStudentAdmin = new System.Windows.Forms.CheckedListBox();
-            this.labelGroupsAdmin = new System.Windows.Forms.Label();
             this.panelMainAdmin.SuspendLayout();
-            this.panelGroupAdmin.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewGroupAdmin)).BeginInit();
-            this.panelAuthorizationAdministrator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAuthorizationAdministrator)).BeginInit();
-            this.panelWorkersAdministrator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewWorkersAdministrator)).BeginInit();
-            this.panelServicesAdministrator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewServicesServicesPartsAdministrator)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewServicesPartsAdministrator)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewServicesServicesAdministrator)).BeginInit();
+            this.panelAdminsAdmin.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAdminsAdmin)).BeginInit();
+            this.panelTeachersAdmin.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTeacherAdmin)).BeginInit();
             this.panelStudentAdmin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewStudentAdmin)).BeginInit();
+            this.panelGroupAdmin.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewGroupAdmin)).BeginInit();
             this.panelSidebarAdmin.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMainAdmin
             // 
+            this.panelMainAdmin.Controls.Add(this.panelAdminsAdmin);
+            this.panelMainAdmin.Controls.Add(this.panelTeachersAdmin);
             this.panelMainAdmin.Controls.Add(this.panelStudentAdmin);
             this.panelMainAdmin.Controls.Add(this.panelGroupAdmin);
-            this.panelMainAdmin.Controls.Add(this.panelAuthorizationAdministrator);
-            this.panelMainAdmin.Controls.Add(this.panelWorkersAdministrator);
-            this.panelMainAdmin.Controls.Add(this.panelServicesAdministrator);
             this.panelMainAdmin.Location = new System.Drawing.Point(189, 0);
             this.panelMainAdmin.Name = "panelMainAdmin";
             this.panelMainAdmin.Size = new System.Drawing.Size(912, 700);
             this.panelMainAdmin.TabIndex = 11;
+            // 
+            // panelAdminsAdmin
+            // 
+            this.panelAdminsAdmin.Controls.Add(this.buttonAdminsAddAdmin);
+            this.panelAdminsAdmin.Controls.Add(this.buttonAdminsDeleteAdmin);
+            this.panelAdminsAdmin.Controls.Add(this.buttonAdminsEditAdmin);
+            this.panelAdminsAdmin.Controls.Add(this.label1);
+            this.panelAdminsAdmin.Controls.Add(this.textBoxAdminsFIOAdmin);
+            this.panelAdminsAdmin.Controls.Add(this.dataGridViewAdminsAdmin);
+            this.panelAdminsAdmin.Location = new System.Drawing.Point(40, 22);
+            this.panelAdminsAdmin.Name = "panelAdminsAdmin";
+            this.panelAdminsAdmin.Size = new System.Drawing.Size(805, 668);
+            this.panelAdminsAdmin.TabIndex = 8;
+            this.panelAdminsAdmin.Visible = false;
+            // 
+            // buttonAdminsAddAdmin
+            // 
+            this.buttonAdminsAddAdmin.Location = new System.Drawing.Point(33, 585);
+            this.buttonAdminsAddAdmin.Name = "buttonAdminsAddAdmin";
+            this.buttonAdminsAddAdmin.Size = new System.Drawing.Size(129, 38);
+            this.buttonAdminsAddAdmin.TabIndex = 7;
+            this.buttonAdminsAddAdmin.Text = "Добавить администратора";
+            this.buttonAdminsAddAdmin.UseVisualStyleBackColor = true;
+            this.buttonAdminsAddAdmin.Click += new System.EventHandler(this.buttonAdminsAddAdmin_Click);
+            // 
+            // buttonAdminsDeleteAdmin
+            // 
+            this.buttonAdminsDeleteAdmin.Location = new System.Drawing.Point(303, 585);
+            this.buttonAdminsDeleteAdmin.Name = "buttonAdminsDeleteAdmin";
+            this.buttonAdminsDeleteAdmin.Size = new System.Drawing.Size(129, 38);
+            this.buttonAdminsDeleteAdmin.TabIndex = 9;
+            this.buttonAdminsDeleteAdmin.Text = "Удалить администратора";
+            this.buttonAdminsDeleteAdmin.UseVisualStyleBackColor = true;
+            this.buttonAdminsDeleteAdmin.Click += new System.EventHandler(this.buttonAdminsDeleteAdmin_Click);
+            // 
+            // buttonAdminsEditAdmin
+            // 
+            this.buttonAdminsEditAdmin.Location = new System.Drawing.Point(168, 585);
+            this.buttonAdminsEditAdmin.Name = "buttonAdminsEditAdmin";
+            this.buttonAdminsEditAdmin.Size = new System.Drawing.Size(129, 38);
+            this.buttonAdminsEditAdmin.TabIndex = 8;
+            this.buttonAdminsEditAdmin.Text = "Сохранить изменения";
+            this.buttonAdminsEditAdmin.UseVisualStyleBackColor = true;
+            this.buttonAdminsEditAdmin.Click += new System.EventHandler(this.buttonAdminsEditAdmin_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(33, 535);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(34, 13);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "ФИО";
+            // 
+            // textBoxAdminsFIOAdmin
+            // 
+            this.textBoxAdminsFIOAdmin.Location = new System.Drawing.Point(33, 559);
+            this.textBoxAdminsFIOAdmin.Name = "textBoxAdminsFIOAdmin";
+            this.textBoxAdminsFIOAdmin.Size = new System.Drawing.Size(399, 20);
+            this.textBoxAdminsFIOAdmin.TabIndex = 3;
+            // 
+            // dataGridViewAdminsAdmin
+            // 
+            this.dataGridViewAdminsAdmin.AllowUserToDeleteRows = false;
+            this.dataGridViewAdminsAdmin.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewAdminsAdmin.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewAdminsAdmin.Location = new System.Drawing.Point(33, 21);
+            this.dataGridViewAdminsAdmin.MultiSelect = false;
+            this.dataGridViewAdminsAdmin.Name = "dataGridViewAdminsAdmin";
+            this.dataGridViewAdminsAdmin.ReadOnly = true;
+            this.dataGridViewAdminsAdmin.Size = new System.Drawing.Size(751, 499);
+            this.dataGridViewAdminsAdmin.TabIndex = 0;
+            this.dataGridViewAdminsAdmin.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewAdminsAdmin_CellClick);
+            // 
+            // panelTeachersAdmin
+            // 
+            this.panelTeachersAdmin.Controls.Add(this.buttonTeacherAddAdmin);
+            this.panelTeachersAdmin.Controls.Add(this.buttonTeacherDeleteAdmin);
+            this.panelTeachersAdmin.Controls.Add(this.buttonTeacherEditAdmin);
+            this.panelTeachersAdmin.Controls.Add(this.label17);
+            this.panelTeachersAdmin.Controls.Add(this.textBoxTeacherFIOAdmin);
+            this.panelTeachersAdmin.Controls.Add(this.dataGridViewTeacherAdmin);
+            this.panelTeachersAdmin.Location = new System.Drawing.Point(41, 21);
+            this.panelTeachersAdmin.Name = "panelTeachersAdmin";
+            this.panelTeachersAdmin.Size = new System.Drawing.Size(805, 668);
+            this.panelTeachersAdmin.TabIndex = 7;
+            this.panelTeachersAdmin.Visible = false;
+            // 
+            // buttonTeacherAddAdmin
+            // 
+            this.buttonTeacherAddAdmin.Location = new System.Drawing.Point(33, 585);
+            this.buttonTeacherAddAdmin.Name = "buttonTeacherAddAdmin";
+            this.buttonTeacherAddAdmin.Size = new System.Drawing.Size(129, 38);
+            this.buttonTeacherAddAdmin.TabIndex = 7;
+            this.buttonTeacherAddAdmin.Text = "Добавить учителя";
+            this.buttonTeacherAddAdmin.UseVisualStyleBackColor = true;
+            this.buttonTeacherAddAdmin.Click += new System.EventHandler(this.buttonWorkersCreateAdministrator_Click);
+            // 
+            // buttonTeacherDeleteAdmin
+            // 
+            this.buttonTeacherDeleteAdmin.Location = new System.Drawing.Point(303, 585);
+            this.buttonTeacherDeleteAdmin.Name = "buttonTeacherDeleteAdmin";
+            this.buttonTeacherDeleteAdmin.Size = new System.Drawing.Size(129, 38);
+            this.buttonTeacherDeleteAdmin.TabIndex = 9;
+            this.buttonTeacherDeleteAdmin.Text = "Удалить выбранного рабочего";
+            this.buttonTeacherDeleteAdmin.UseVisualStyleBackColor = true;
+            this.buttonTeacherDeleteAdmin.Click += new System.EventHandler(this.buttonTeacherDeleteAdmin_Click);
+            // 
+            // buttonTeacherEditAdmin
+            // 
+            this.buttonTeacherEditAdmin.Location = new System.Drawing.Point(168, 585);
+            this.buttonTeacherEditAdmin.Name = "buttonTeacherEditAdmin";
+            this.buttonTeacherEditAdmin.Size = new System.Drawing.Size(129, 38);
+            this.buttonTeacherEditAdmin.TabIndex = 8;
+            this.buttonTeacherEditAdmin.Text = "Сохранить изменения выбранного рабочего";
+            this.buttonTeacherEditAdmin.UseVisualStyleBackColor = true;
+            this.buttonTeacherEditAdmin.Click += new System.EventHandler(this.buttonTeacherEditAdmin_Click);
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(33, 535);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(34, 13);
+            this.label17.TabIndex = 4;
+            this.label17.Text = "ФИО";
+            // 
+            // textBoxTeacherFIOAdmin
+            // 
+            this.textBoxTeacherFIOAdmin.Location = new System.Drawing.Point(33, 559);
+            this.textBoxTeacherFIOAdmin.Name = "textBoxTeacherFIOAdmin";
+            this.textBoxTeacherFIOAdmin.Size = new System.Drawing.Size(399, 20);
+            this.textBoxTeacherFIOAdmin.TabIndex = 3;
+            // 
+            // dataGridViewTeacherAdmin
+            // 
+            this.dataGridViewTeacherAdmin.AllowUserToDeleteRows = false;
+            this.dataGridViewTeacherAdmin.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewTeacherAdmin.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewTeacherAdmin.Location = new System.Drawing.Point(33, 21);
+            this.dataGridViewTeacherAdmin.MultiSelect = false;
+            this.dataGridViewTeacherAdmin.Name = "dataGridViewTeacherAdmin";
+            this.dataGridViewTeacherAdmin.ReadOnly = true;
+            this.dataGridViewTeacherAdmin.Size = new System.Drawing.Size(751, 499);
+            this.dataGridViewTeacherAdmin.TabIndex = 0;
+            this.dataGridViewTeacherAdmin.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewWorkersAdministrator_CellClick);
+            // 
+            // panelStudentAdmin
+            // 
+            this.panelStudentAdmin.Controls.Add(this.labelGroupsAdmin);
+            this.panelStudentAdmin.Controls.Add(this.checkedListBoxGroupStudentAdmin);
+            this.panelStudentAdmin.Controls.Add(this.buttonStudentCreateAdmin);
+            this.panelStudentAdmin.Controls.Add(this.buttonStudentDeleteAdmin);
+            this.panelStudentAdmin.Controls.Add(this.labelStudentNameAdmin);
+            this.panelStudentAdmin.Controls.Add(this.textBoxStudentNameAdmin);
+            this.panelStudentAdmin.Controls.Add(this.dataGridViewStudentAdmin);
+            this.panelStudentAdmin.Location = new System.Drawing.Point(0, 0);
+            this.panelStudentAdmin.Name = "panelStudentAdmin";
+            this.panelStudentAdmin.Size = new System.Drawing.Size(805, 668);
+            this.panelStudentAdmin.TabIndex = 5;
+            this.panelStudentAdmin.Visible = false;
+            // 
+            // labelGroupsAdmin
+            // 
+            this.labelGroupsAdmin.AutoSize = true;
+            this.labelGroupsAdmin.Location = new System.Drawing.Point(318, 535);
+            this.labelGroupsAdmin.Name = "labelGroupsAdmin";
+            this.labelGroupsAdmin.Size = new System.Drawing.Size(44, 13);
+            this.labelGroupsAdmin.TabIndex = 12;
+            this.labelGroupsAdmin.Text = "Группы";
+            // 
+            // checkedListBoxGroupStudentAdmin
+            // 
+            this.checkedListBoxGroupStudentAdmin.CheckOnClick = true;
+            this.checkedListBoxGroupStudentAdmin.FormattingEnabled = true;
+            this.checkedListBoxGroupStudentAdmin.Location = new System.Drawing.Point(321, 559);
+            this.checkedListBoxGroupStudentAdmin.Name = "checkedListBoxGroupStudentAdmin";
+            this.checkedListBoxGroupStudentAdmin.Size = new System.Drawing.Size(120, 94);
+            this.checkedListBoxGroupStudentAdmin.TabIndex = 11;
+            this.checkedListBoxGroupStudentAdmin.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.checkedListBoxGroupStudentAdmin_ItemCheck);
+            // 
+            // buttonStudentCreateAdmin
+            // 
+            this.buttonStudentCreateAdmin.Location = new System.Drawing.Point(33, 585);
+            this.buttonStudentCreateAdmin.Name = "buttonStudentCreateAdmin";
+            this.buttonStudentCreateAdmin.Size = new System.Drawing.Size(129, 38);
+            this.buttonStudentCreateAdmin.TabIndex = 8;
+            this.buttonStudentCreateAdmin.Text = "Добавить студента";
+            this.buttonStudentCreateAdmin.UseVisualStyleBackColor = true;
+            this.buttonStudentCreateAdmin.Click += new System.EventHandler(this.buttonStudentCreateAdmin_Click);
+            // 
+            // buttonStudentDeleteAdmin
+            // 
+            this.buttonStudentDeleteAdmin.Location = new System.Drawing.Point(168, 585);
+            this.buttonStudentDeleteAdmin.Name = "buttonStudentDeleteAdmin";
+            this.buttonStudentDeleteAdmin.Size = new System.Drawing.Size(129, 38);
+            this.buttonStudentDeleteAdmin.TabIndex = 10;
+            this.buttonStudentDeleteAdmin.Text = "Удалить студента";
+            this.buttonStudentDeleteAdmin.UseVisualStyleBackColor = true;
+            this.buttonStudentDeleteAdmin.Click += new System.EventHandler(this.buttonStudentDeleteAdmin_Click);
+            // 
+            // labelStudentNameAdmin
+            // 
+            this.labelStudentNameAdmin.AutoSize = true;
+            this.labelStudentNameAdmin.Location = new System.Drawing.Point(33, 535);
+            this.labelStudentNameAdmin.Name = "labelStudentNameAdmin";
+            this.labelStudentNameAdmin.Size = new System.Drawing.Size(82, 13);
+            this.labelStudentNameAdmin.TabIndex = 4;
+            this.labelStudentNameAdmin.Text = "ФИО студента";
+            // 
+            // textBoxStudentNameAdmin
+            // 
+            this.textBoxStudentNameAdmin.Location = new System.Drawing.Point(33, 559);
+            this.textBoxStudentNameAdmin.Name = "textBoxStudentNameAdmin";
+            this.textBoxStudentNameAdmin.Size = new System.Drawing.Size(264, 20);
+            this.textBoxStudentNameAdmin.TabIndex = 3;
+            // 
+            // dataGridViewStudentAdmin
+            // 
+            this.dataGridViewStudentAdmin.AllowUserToDeleteRows = false;
+            this.dataGridViewStudentAdmin.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewStudentAdmin.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewStudentAdmin.Location = new System.Drawing.Point(33, 21);
+            this.dataGridViewStudentAdmin.MultiSelect = false;
+            this.dataGridViewStudentAdmin.Name = "dataGridViewStudentAdmin";
+            this.dataGridViewStudentAdmin.ReadOnly = true;
+            this.dataGridViewStudentAdmin.Size = new System.Drawing.Size(751, 499);
+            this.dataGridViewStudentAdmin.TabIndex = 0;
+            this.dataGridViewStudentAdmin.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewStudentAdmin_CellClick);
             // 
             // panelGroupAdmin
             // 
@@ -226,526 +415,6 @@
             this.dataGridViewGroupAdmin.Size = new System.Drawing.Size(751, 438);
             this.dataGridViewGroupAdmin.TabIndex = 0;
             // 
-            // panelAuthorizationAdministrator
-            // 
-            this.panelAuthorizationAdministrator.Controls.Add(this.comboBoxWorkersWorkersAdministrator);
-            this.panelAuthorizationAdministrator.Controls.Add(this.comboBoxWorkersAccessAdministrator);
-            this.panelAuthorizationAdministrator.Controls.Add(this.label20);
-            this.panelAuthorizationAdministrator.Controls.Add(this.label21);
-            this.panelAuthorizationAdministrator.Controls.Add(this.textBoxAuthorizationPasswordAdministrator);
-            this.panelAuthorizationAdministrator.Controls.Add(this.buttonAuthorizationCreateAdministrator);
-            this.panelAuthorizationAdministrator.Controls.Add(this.buttonAuthorizationDeleteAdministrator);
-            this.panelAuthorizationAdministrator.Controls.Add(this.buttonAuthorizationSaveAdministrator);
-            this.panelAuthorizationAdministrator.Controls.Add(this.label22);
-            this.panelAuthorizationAdministrator.Controls.Add(this.label23);
-            this.panelAuthorizationAdministrator.Controls.Add(this.textBoxAuthorizationLoginAdministrator);
-            this.panelAuthorizationAdministrator.Controls.Add(this.dataGridViewAuthorizationAdministrator);
-            this.panelAuthorizationAdministrator.Location = new System.Drawing.Point(41, 21);
-            this.panelAuthorizationAdministrator.Name = "panelAuthorizationAdministrator";
-            this.panelAuthorizationAdministrator.Size = new System.Drawing.Size(805, 668);
-            this.panelAuthorizationAdministrator.TabIndex = 8;
-            // 
-            // comboBoxWorkersWorkersAdministrator
-            // 
-            this.comboBoxWorkersWorkersAdministrator.FormattingEnabled = true;
-            this.comboBoxWorkersWorkersAdministrator.Location = new System.Drawing.Point(447, 560);
-            this.comboBoxWorkersWorkersAdministrator.Name = "comboBoxWorkersWorkersAdministrator";
-            this.comboBoxWorkersWorkersAdministrator.Size = new System.Drawing.Size(192, 21);
-            this.comboBoxWorkersWorkersAdministrator.TabIndex = 17;
-            // 
-            // comboBoxWorkersAccessAdministrator
-            // 
-            this.comboBoxWorkersAccessAdministrator.FormattingEnabled = true;
-            this.comboBoxWorkersAccessAdministrator.Location = new System.Drawing.Point(309, 560);
-            this.comboBoxWorkersAccessAdministrator.Name = "comboBoxWorkersAccessAdministrator";
-            this.comboBoxWorkersAccessAdministrator.Size = new System.Drawing.Size(132, 21);
-            this.comboBoxWorkersAccessAdministrator.TabIndex = 16;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(306, 544);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(94, 13);
-            this.label20.TabIndex = 14;
-            this.label20.Text = "Уровень доступа";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(168, 544);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(45, 13);
-            this.label21.TabIndex = 12;
-            this.label21.Text = "Пароль";
-            // 
-            // textBoxAuthorizationPasswordAdministrator
-            // 
-            this.textBoxAuthorizationPasswordAdministrator.Location = new System.Drawing.Point(171, 560);
-            this.textBoxAuthorizationPasswordAdministrator.Name = "textBoxAuthorizationPasswordAdministrator";
-            this.textBoxAuthorizationPasswordAdministrator.Size = new System.Drawing.Size(132, 20);
-            this.textBoxAuthorizationPasswordAdministrator.TabIndex = 4;
-            // 
-            // buttonAuthorizationCreateAdministrator
-            // 
-            this.buttonAuthorizationCreateAdministrator.Location = new System.Drawing.Point(33, 589);
-            this.buttonAuthorizationCreateAdministrator.Name = "buttonAuthorizationCreateAdministrator";
-            this.buttonAuthorizationCreateAdministrator.Size = new System.Drawing.Size(132, 38);
-            this.buttonAuthorizationCreateAdministrator.TabIndex = 7;
-            this.buttonAuthorizationCreateAdministrator.Text = "Создать нового пользователя";
-            this.buttonAuthorizationCreateAdministrator.UseVisualStyleBackColor = true;
-            // 
-            // buttonAuthorizationDeleteAdministrator
-            // 
-            this.buttonAuthorizationDeleteAdministrator.Location = new System.Drawing.Point(309, 589);
-            this.buttonAuthorizationDeleteAdministrator.Name = "buttonAuthorizationDeleteAdministrator";
-            this.buttonAuthorizationDeleteAdministrator.Size = new System.Drawing.Size(132, 38);
-            this.buttonAuthorizationDeleteAdministrator.TabIndex = 9;
-            this.buttonAuthorizationDeleteAdministrator.Text = "Удалить выбранного пользователя";
-            this.buttonAuthorizationDeleteAdministrator.UseVisualStyleBackColor = true;
-            // 
-            // buttonAuthorizationSaveAdministrator
-            // 
-            this.buttonAuthorizationSaveAdministrator.Location = new System.Drawing.Point(171, 589);
-            this.buttonAuthorizationSaveAdministrator.Name = "buttonAuthorizationSaveAdministrator";
-            this.buttonAuthorizationSaveAdministrator.Size = new System.Drawing.Size(132, 38);
-            this.buttonAuthorizationSaveAdministrator.TabIndex = 8;
-            this.buttonAuthorizationSaveAdministrator.Text = "Сохранить изменения выбранного пользователя";
-            this.buttonAuthorizationSaveAdministrator.UseVisualStyleBackColor = true;
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(444, 544);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(49, 13);
-            this.label22.TabIndex = 8;
-            this.label22.Text = "Рабочий";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(30, 544);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(38, 13);
-            this.label23.TabIndex = 4;
-            this.label23.Text = "Логин";
-            // 
-            // textBoxAuthorizationLoginAdministrator
-            // 
-            this.textBoxAuthorizationLoginAdministrator.Location = new System.Drawing.Point(33, 560);
-            this.textBoxAuthorizationLoginAdministrator.Name = "textBoxAuthorizationLoginAdministrator";
-            this.textBoxAuthorizationLoginAdministrator.Size = new System.Drawing.Size(132, 20);
-            this.textBoxAuthorizationLoginAdministrator.TabIndex = 3;
-            // 
-            // dataGridViewAuthorizationAdministrator
-            // 
-            this.dataGridViewAuthorizationAdministrator.AllowUserToDeleteRows = false;
-            this.dataGridViewAuthorizationAdministrator.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridViewAuthorizationAdministrator.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewAuthorizationAdministrator.Location = new System.Drawing.Point(33, 21);
-            this.dataGridViewAuthorizationAdministrator.MultiSelect = false;
-            this.dataGridViewAuthorizationAdministrator.Name = "dataGridViewAuthorizationAdministrator";
-            this.dataGridViewAuthorizationAdministrator.ReadOnly = true;
-            this.dataGridViewAuthorizationAdministrator.Size = new System.Drawing.Size(751, 507);
-            this.dataGridViewAuthorizationAdministrator.TabIndex = 0;
-            // 
-            // panelWorkersAdministrator
-            // 
-            this.panelWorkersAdministrator.Controls.Add(this.label19);
-            this.panelWorkersAdministrator.Controls.Add(this.textBoxWorkersSalaryAdministrator);
-            this.panelWorkersAdministrator.Controls.Add(this.label18);
-            this.panelWorkersAdministrator.Controls.Add(this.textBoxWorkersSurnameAdministrator);
-            this.panelWorkersAdministrator.Controls.Add(this.buttonWorkersCreateAdministrator);
-            this.panelWorkersAdministrator.Controls.Add(this.buttonWorkersDeleteAdministrator);
-            this.panelWorkersAdministrator.Controls.Add(this.buttonWorkersSaveAdministrator);
-            this.panelWorkersAdministrator.Controls.Add(this.label16);
-            this.panelWorkersAdministrator.Controls.Add(this.textBoxWorkersProfessionAdministrator);
-            this.panelWorkersAdministrator.Controls.Add(this.label17);
-            this.panelWorkersAdministrator.Controls.Add(this.textBoxWorkersNameAdministrator);
-            this.panelWorkersAdministrator.Controls.Add(this.dataGridViewWorkersAdministrator);
-            this.panelWorkersAdministrator.Location = new System.Drawing.Point(41, 21);
-            this.panelWorkersAdministrator.Name = "panelWorkersAdministrator";
-            this.panelWorkersAdministrator.Size = new System.Drawing.Size(805, 668);
-            this.panelWorkersAdministrator.TabIndex = 7;
-            this.panelWorkersAdministrator.Visible = false;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(438, 535);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(55, 13);
-            this.label19.TabIndex = 14;
-            this.label19.Text = "Зарплата";
-            // 
-            // textBoxWorkersSalaryAdministrator
-            // 
-            this.textBoxWorkersSalaryAdministrator.Location = new System.Drawing.Point(438, 559);
-            this.textBoxWorkersSalaryAdministrator.Name = "textBoxWorkersSalaryAdministrator";
-            this.textBoxWorkersSalaryAdministrator.Size = new System.Drawing.Size(129, 20);
-            this.textBoxWorkersSalaryAdministrator.TabIndex = 6;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(168, 535);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(56, 13);
-            this.label18.TabIndex = 12;
-            this.label18.Text = "Фамилия";
-            // 
-            // textBoxWorkersSurnameAdministrator
-            // 
-            this.textBoxWorkersSurnameAdministrator.Location = new System.Drawing.Point(168, 559);
-            this.textBoxWorkersSurnameAdministrator.Name = "textBoxWorkersSurnameAdministrator";
-            this.textBoxWorkersSurnameAdministrator.Size = new System.Drawing.Size(129, 20);
-            this.textBoxWorkersSurnameAdministrator.TabIndex = 4;
-            // 
-            // buttonWorkersCreateAdministrator
-            // 
-            this.buttonWorkersCreateAdministrator.Location = new System.Drawing.Point(33, 585);
-            this.buttonWorkersCreateAdministrator.Name = "buttonWorkersCreateAdministrator";
-            this.buttonWorkersCreateAdministrator.Size = new System.Drawing.Size(129, 38);
-            this.buttonWorkersCreateAdministrator.TabIndex = 7;
-            this.buttonWorkersCreateAdministrator.Text = "Создать нового рабочего";
-            this.buttonWorkersCreateAdministrator.UseVisualStyleBackColor = true;
-            // 
-            // buttonWorkersDeleteAdministrator
-            // 
-            this.buttonWorkersDeleteAdministrator.Location = new System.Drawing.Point(303, 585);
-            this.buttonWorkersDeleteAdministrator.Name = "buttonWorkersDeleteAdministrator";
-            this.buttonWorkersDeleteAdministrator.Size = new System.Drawing.Size(129, 38);
-            this.buttonWorkersDeleteAdministrator.TabIndex = 9;
-            this.buttonWorkersDeleteAdministrator.Text = "Удалить выбранного рабочего";
-            this.buttonWorkersDeleteAdministrator.UseVisualStyleBackColor = true;
-            // 
-            // buttonWorkersSaveAdministrator
-            // 
-            this.buttonWorkersSaveAdministrator.Location = new System.Drawing.Point(168, 585);
-            this.buttonWorkersSaveAdministrator.Name = "buttonWorkersSaveAdministrator";
-            this.buttonWorkersSaveAdministrator.Size = new System.Drawing.Size(129, 38);
-            this.buttonWorkersSaveAdministrator.TabIndex = 8;
-            this.buttonWorkersSaveAdministrator.Text = "Сохранить изменения выбранного рабочего";
-            this.buttonWorkersSaveAdministrator.UseVisualStyleBackColor = true;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(300, 535);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(65, 13);
-            this.label16.TabIndex = 8;
-            this.label16.Text = "Должность";
-            // 
-            // textBoxWorkersProfessionAdministrator
-            // 
-            this.textBoxWorkersProfessionAdministrator.Location = new System.Drawing.Point(303, 559);
-            this.textBoxWorkersProfessionAdministrator.Name = "textBoxWorkersProfessionAdministrator";
-            this.textBoxWorkersProfessionAdministrator.Size = new System.Drawing.Size(129, 20);
-            this.textBoxWorkersProfessionAdministrator.TabIndex = 5;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(33, 535);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(29, 13);
-            this.label17.TabIndex = 4;
-            this.label17.Text = "Имя";
-            // 
-            // textBoxWorkersNameAdministrator
-            // 
-            this.textBoxWorkersNameAdministrator.Location = new System.Drawing.Point(33, 559);
-            this.textBoxWorkersNameAdministrator.Name = "textBoxWorkersNameAdministrator";
-            this.textBoxWorkersNameAdministrator.Size = new System.Drawing.Size(129, 20);
-            this.textBoxWorkersNameAdministrator.TabIndex = 3;
-            // 
-            // dataGridViewWorkersAdministrator
-            // 
-            this.dataGridViewWorkersAdministrator.AllowUserToDeleteRows = false;
-            this.dataGridViewWorkersAdministrator.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridViewWorkersAdministrator.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewWorkersAdministrator.Location = new System.Drawing.Point(33, 21);
-            this.dataGridViewWorkersAdministrator.MultiSelect = false;
-            this.dataGridViewWorkersAdministrator.Name = "dataGridViewWorkersAdministrator";
-            this.dataGridViewWorkersAdministrator.ReadOnly = true;
-            this.dataGridViewWorkersAdministrator.Size = new System.Drawing.Size(751, 499);
-            this.dataGridViewWorkersAdministrator.TabIndex = 0;
-            // 
-            // panelServicesAdministrator
-            // 
-            this.panelServicesAdministrator.Controls.Add(this.label12);
-            this.panelServicesAdministrator.Controls.Add(this.textBoxServicesPartIDAdministrator);
-            this.panelServicesAdministrator.Controls.Add(this.label13);
-            this.panelServicesAdministrator.Controls.Add(this.textBoxServicesAmountAdministrator);
-            this.panelServicesAdministrator.Controls.Add(this.label15);
-            this.panelServicesAdministrator.Controls.Add(this.textBoxServicesServiceIDAdministrator);
-            this.panelServicesAdministrator.Controls.Add(this.label10);
-            this.panelServicesAdministrator.Controls.Add(this.textBoxServicesPriceAdministrator);
-            this.panelServicesAdministrator.Controls.Add(this.buttonServicesCreateLinkAdministrator);
-            this.panelServicesAdministrator.Controls.Add(this.buttonServicesDeleteLinktAdministrator);
-            this.panelServicesAdministrator.Controls.Add(this.buttonServicesAlterLinkAdministrator);
-            this.panelServicesAdministrator.Controls.Add(this.dataGridViewServicesServicesPartsAdministrator);
-            this.panelServicesAdministrator.Controls.Add(this.dataGridViewServicesPartsAdministrator);
-            this.panelServicesAdministrator.Controls.Add(this.buttonServicesCreateServiceAdministrator);
-            this.panelServicesAdministrator.Controls.Add(this.buttonServicesDeleteServiceAdministrator);
-            this.panelServicesAdministrator.Controls.Add(this.buttonServicesSaveServiceAdministrator);
-            this.panelServicesAdministrator.Controls.Add(this.label8);
-            this.panelServicesAdministrator.Controls.Add(this.textBoxServicesTimeAdministrator);
-            this.panelServicesAdministrator.Controls.Add(this.label9);
-            this.panelServicesAdministrator.Controls.Add(this.textBoxServicesNameAdministrator);
-            this.panelServicesAdministrator.Controls.Add(this.dataGridViewServicesServicesAdministrator);
-            this.panelServicesAdministrator.Location = new System.Drawing.Point(41, 21);
-            this.panelServicesAdministrator.Name = "panelServicesAdministrator";
-            this.panelServicesAdministrator.Size = new System.Drawing.Size(845, 642);
-            this.panelServicesAdministrator.TabIndex = 6;
-            this.panelServicesAdministrator.Visible = false;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(568, 535);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(79, 13);
-            this.label12.TabIndex = 23;
-            this.label12.Text = "Номер детали";
-            // 
-            // textBoxServicesPartIDAdministrator
-            // 
-            this.textBoxServicesPartIDAdministrator.Location = new System.Drawing.Point(571, 559);
-            this.textBoxServicesPartIDAdministrator.Name = "textBoxServicesPartIDAdministrator";
-            this.textBoxServicesPartIDAdministrator.Size = new System.Drawing.Size(129, 20);
-            this.textBoxServicesPartIDAdministrator.TabIndex = 10;
-            // 
-            // label13
-            // 
-            this.label13.Location = new System.Drawing.Point(703, 530);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(105, 26);
-            this.label13.TabIndex = 21;
-            this.label13.Text = "Необходимое количество";
-            // 
-            // textBoxServicesAmountAdministrator
-            // 
-            this.textBoxServicesAmountAdministrator.Location = new System.Drawing.Point(706, 559);
-            this.textBoxServicesAmountAdministrator.Name = "textBoxServicesAmountAdministrator";
-            this.textBoxServicesAmountAdministrator.Size = new System.Drawing.Size(129, 20);
-            this.textBoxServicesAmountAdministrator.TabIndex = 11;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(435, 535);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(77, 13);
-            this.label15.TabIndex = 20;
-            this.label15.Text = "Номер услуги";
-            // 
-            // textBoxServicesServiceIDAdministrator
-            // 
-            this.textBoxServicesServiceIDAdministrator.Location = new System.Drawing.Point(438, 559);
-            this.textBoxServicesServiceIDAdministrator.Name = "textBoxServicesServiceIDAdministrator";
-            this.textBoxServicesServiceIDAdministrator.Size = new System.Drawing.Size(127, 20);
-            this.textBoxServicesServiceIDAdministrator.TabIndex = 9;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(168, 535);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(62, 13);
-            this.label10.TabIndex = 17;
-            this.label10.Text = "Стоимость";
-            // 
-            // textBoxServicesPriceAdministrator
-            // 
-            this.textBoxServicesPriceAdministrator.Location = new System.Drawing.Point(168, 559);
-            this.textBoxServicesPriceAdministrator.Name = "textBoxServicesPriceAdministrator";
-            this.textBoxServicesPriceAdministrator.Size = new System.Drawing.Size(129, 20);
-            this.textBoxServicesPriceAdministrator.TabIndex = 4;
-            // 
-            // buttonServicesCreateLinkAdministrator
-            // 
-            this.buttonServicesCreateLinkAdministrator.Location = new System.Drawing.Point(438, 585);
-            this.buttonServicesCreateLinkAdministrator.Name = "buttonServicesCreateLinkAdministrator";
-            this.buttonServicesCreateLinkAdministrator.Size = new System.Drawing.Size(129, 38);
-            this.buttonServicesCreateLinkAdministrator.TabIndex = 12;
-            this.buttonServicesCreateLinkAdministrator.Text = "Создать новую связь";
-            this.buttonServicesCreateLinkAdministrator.UseVisualStyleBackColor = true;
-            // 
-            // buttonServicesDeleteLinktAdministrator
-            // 
-            this.buttonServicesDeleteLinktAdministrator.Location = new System.Drawing.Point(706, 585);
-            this.buttonServicesDeleteLinktAdministrator.Name = "buttonServicesDeleteLinktAdministrator";
-            this.buttonServicesDeleteLinktAdministrator.Size = new System.Drawing.Size(129, 38);
-            this.buttonServicesDeleteLinktAdministrator.TabIndex = 14;
-            this.buttonServicesDeleteLinktAdministrator.Text = " Удалить выбранную связь";
-            this.buttonServicesDeleteLinktAdministrator.UseVisualStyleBackColor = true;
-            // 
-            // buttonServicesAlterLinkAdministrator
-            // 
-            this.buttonServicesAlterLinkAdministrator.Location = new System.Drawing.Point(571, 585);
-            this.buttonServicesAlterLinkAdministrator.Name = "buttonServicesAlterLinkAdministrator";
-            this.buttonServicesAlterLinkAdministrator.Size = new System.Drawing.Size(129, 38);
-            this.buttonServicesAlterLinkAdministrator.TabIndex = 13;
-            this.buttonServicesAlterLinkAdministrator.Text = "Сохранить изменения выбранной связи";
-            this.buttonServicesAlterLinkAdministrator.UseVisualStyleBackColor = true;
-            // 
-            // dataGridViewServicesServicesPartsAdministrator
-            // 
-            this.dataGridViewServicesServicesPartsAdministrator.AllowUserToDeleteRows = false;
-            this.dataGridViewServicesServicesPartsAdministrator.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridViewServicesServicesPartsAdministrator.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewServicesServicesPartsAdministrator.Location = new System.Drawing.Point(438, 267);
-            this.dataGridViewServicesServicesPartsAdministrator.Name = "dataGridViewServicesServicesPartsAdministrator";
-            this.dataGridViewServicesServicesPartsAdministrator.ReadOnly = true;
-            this.dataGridViewServicesServicesPartsAdministrator.Size = new System.Drawing.Size(399, 253);
-            this.dataGridViewServicesServicesPartsAdministrator.TabIndex = 500;
-            // 
-            // dataGridViewServicesPartsAdministrator
-            // 
-            this.dataGridViewServicesPartsAdministrator.AllowUserToDeleteRows = false;
-            this.dataGridViewServicesPartsAdministrator.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridViewServicesPartsAdministrator.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewServicesPartsAdministrator.Location = new System.Drawing.Point(438, 21);
-            this.dataGridViewServicesPartsAdministrator.Name = "dataGridViewServicesPartsAdministrator";
-            this.dataGridViewServicesPartsAdministrator.ReadOnly = true;
-            this.dataGridViewServicesPartsAdministrator.Size = new System.Drawing.Size(397, 240);
-            this.dataGridViewServicesPartsAdministrator.TabIndex = 40;
-            // 
-            // buttonServicesCreateServiceAdministrator
-            // 
-            this.buttonServicesCreateServiceAdministrator.Location = new System.Drawing.Point(33, 585);
-            this.buttonServicesCreateServiceAdministrator.Name = "buttonServicesCreateServiceAdministrator";
-            this.buttonServicesCreateServiceAdministrator.Size = new System.Drawing.Size(129, 38);
-            this.buttonServicesCreateServiceAdministrator.TabIndex = 6;
-            this.buttonServicesCreateServiceAdministrator.Text = "Создать новую услугу";
-            this.buttonServicesCreateServiceAdministrator.UseVisualStyleBackColor = true;
-            // 
-            // buttonServicesDeleteServiceAdministrator
-            // 
-            this.buttonServicesDeleteServiceAdministrator.Location = new System.Drawing.Point(303, 585);
-            this.buttonServicesDeleteServiceAdministrator.Name = "buttonServicesDeleteServiceAdministrator";
-            this.buttonServicesDeleteServiceAdministrator.Size = new System.Drawing.Size(129, 38);
-            this.buttonServicesDeleteServiceAdministrator.TabIndex = 8;
-            this.buttonServicesDeleteServiceAdministrator.Text = "Удалить выбранную услугу";
-            this.buttonServicesDeleteServiceAdministrator.UseVisualStyleBackColor = true;
-            // 
-            // buttonServicesSaveServiceAdministrator
-            // 
-            this.buttonServicesSaveServiceAdministrator.Location = new System.Drawing.Point(168, 585);
-            this.buttonServicesSaveServiceAdministrator.Name = "buttonServicesSaveServiceAdministrator";
-            this.buttonServicesSaveServiceAdministrator.Size = new System.Drawing.Size(129, 38);
-            this.buttonServicesSaveServiceAdministrator.TabIndex = 7;
-            this.buttonServicesSaveServiceAdministrator.Text = "Сохранить изменения выбранной услуги";
-            this.buttonServicesSaveServiceAdministrator.UseVisualStyleBackColor = true;
-            // 
-            // label8
-            // 
-            this.label8.Location = new System.Drawing.Point(300, 530);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(123, 26);
-            this.label8.TabIndex = 8;
-            this.label8.Text = "Рекомендуемый срок работ(Полных дней)";
-            // 
-            // textBoxServicesTimeAdministrator
-            // 
-            this.textBoxServicesTimeAdministrator.Location = new System.Drawing.Point(303, 559);
-            this.textBoxServicesTimeAdministrator.Name = "textBoxServicesTimeAdministrator";
-            this.textBoxServicesTimeAdministrator.Size = new System.Drawing.Size(129, 20);
-            this.textBoxServicesTimeAdministrator.TabIndex = 5;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(33, 535);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(93, 13);
-            this.label9.TabIndex = 4;
-            this.label9.Text = "Название услуги";
-            // 
-            // textBoxServicesNameAdministrator
-            // 
-            this.textBoxServicesNameAdministrator.Location = new System.Drawing.Point(33, 559);
-            this.textBoxServicesNameAdministrator.Name = "textBoxServicesNameAdministrator";
-            this.textBoxServicesNameAdministrator.Size = new System.Drawing.Size(129, 20);
-            this.textBoxServicesNameAdministrator.TabIndex = 3;
-            // 
-            // dataGridViewServicesServicesAdministrator
-            // 
-            this.dataGridViewServicesServicesAdministrator.AllowUserToDeleteRows = false;
-            this.dataGridViewServicesServicesAdministrator.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridViewServicesServicesAdministrator.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewServicesServicesAdministrator.Location = new System.Drawing.Point(33, 21);
-            this.dataGridViewServicesServicesAdministrator.MultiSelect = false;
-            this.dataGridViewServicesServicesAdministrator.Name = "dataGridViewServicesServicesAdministrator";
-            this.dataGridViewServicesServicesAdministrator.ReadOnly = true;
-            this.dataGridViewServicesServicesAdministrator.Size = new System.Drawing.Size(399, 499);
-            this.dataGridViewServicesServicesAdministrator.TabIndex = 0;
-            // 
-            // panelStudentAdmin
-            // 
-            this.panelStudentAdmin.Controls.Add(this.labelGroupsAdmin);
-            this.panelStudentAdmin.Controls.Add(this.checkedListBoxGroupStudentAdmin);
-            this.panelStudentAdmin.Controls.Add(this.buttonStudentCreateAdmin);
-            this.panelStudentAdmin.Controls.Add(this.buttonStudentDeleteAdmin);
-            this.panelStudentAdmin.Controls.Add(this.labelStudentNameAdmin);
-            this.panelStudentAdmin.Controls.Add(this.textBoxStudentNameAdmin);
-            this.panelStudentAdmin.Controls.Add(this.dataGridViewStudentAdmin);
-            this.panelStudentAdmin.Location = new System.Drawing.Point(0, 0);
-            this.panelStudentAdmin.Name = "panelStudentAdmin";
-            this.panelStudentAdmin.Size = new System.Drawing.Size(805, 668);
-            this.panelStudentAdmin.TabIndex = 5;
-            this.panelStudentAdmin.Visible = false;
-            // 
-            // buttonStudentCreateAdmin
-            // 
-            this.buttonStudentCreateAdmin.Location = new System.Drawing.Point(33, 585);
-            this.buttonStudentCreateAdmin.Name = "buttonStudentCreateAdmin";
-            this.buttonStudentCreateAdmin.Size = new System.Drawing.Size(129, 38);
-            this.buttonStudentCreateAdmin.TabIndex = 8;
-            this.buttonStudentCreateAdmin.Text = "Добавить студента";
-            this.buttonStudentCreateAdmin.UseVisualStyleBackColor = true;
-            // 
-            // buttonStudentDeleteAdmin
-            // 
-            this.buttonStudentDeleteAdmin.Location = new System.Drawing.Point(168, 585);
-            this.buttonStudentDeleteAdmin.Name = "buttonStudentDeleteAdmin";
-            this.buttonStudentDeleteAdmin.Size = new System.Drawing.Size(129, 38);
-            this.buttonStudentDeleteAdmin.TabIndex = 10;
-            this.buttonStudentDeleteAdmin.Text = "Удалить студента";
-            this.buttonStudentDeleteAdmin.UseVisualStyleBackColor = true;
-            // 
-            // labelStudentNameAdmin
-            // 
-            this.labelStudentNameAdmin.AutoSize = true;
-            this.labelStudentNameAdmin.Location = new System.Drawing.Point(33, 535);
-            this.labelStudentNameAdmin.Name = "labelStudentNameAdmin";
-            this.labelStudentNameAdmin.Size = new System.Drawing.Size(82, 13);
-            this.labelStudentNameAdmin.TabIndex = 4;
-            this.labelStudentNameAdmin.Text = "ФИО студента";
-            // 
-            // textBoxStudentNameAdmin
-            // 
-            this.textBoxStudentNameAdmin.Location = new System.Drawing.Point(33, 559);
-            this.textBoxStudentNameAdmin.Name = "textBoxStudentNameAdmin";
-            this.textBoxStudentNameAdmin.Size = new System.Drawing.Size(264, 20);
-            this.textBoxStudentNameAdmin.TabIndex = 3;
-            // 
-            // dataGridViewStudentAdmin
-            // 
-            this.dataGridViewStudentAdmin.AllowUserToDeleteRows = false;
-            this.dataGridViewStudentAdmin.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridViewStudentAdmin.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewStudentAdmin.Location = new System.Drawing.Point(33, 21);
-            this.dataGridViewStudentAdmin.MultiSelect = false;
-            this.dataGridViewStudentAdmin.Name = "dataGridViewStudentAdmin";
-            this.dataGridViewStudentAdmin.ReadOnly = true;
-            this.dataGridViewStudentAdmin.Size = new System.Drawing.Size(751, 499);
-            this.dataGridViewStudentAdmin.TabIndex = 0;
-            this.dataGridViewStudentAdmin.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewStudentAdmin_CellClick);
-            // 
             // panelSidebarAdmin
             // 
             this.panelSidebarAdmin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
@@ -753,7 +422,6 @@
             this.panelSidebarAdmin.Controls.Add(this.buttonStudentsAdmin);
             this.panelSidebarAdmin.Controls.Add(this.buttonTeachersAdmin);
             this.panelSidebarAdmin.Controls.Add(this.buttonAdminAdmin);
-            this.panelSidebarAdmin.Controls.Add(this.buttonAuthAdmin);
             this.panelSidebarAdmin.Location = new System.Drawing.Point(0, 0);
             this.panelSidebarAdmin.Name = "panelSidebarAdmin";
             this.panelSidebarAdmin.Size = new System.Drawing.Size(189, 700);
@@ -799,6 +467,7 @@
             this.buttonTeachersAdmin.TabIndex = 3;
             this.buttonTeachersAdmin.Text = "Учителя";
             this.buttonTeachersAdmin.UseVisualStyleBackColor = true;
+            this.buttonTeachersAdmin.Click += new System.EventHandler(this.buttonTeachersAdmin_Click);
             // 
             // buttonAdminAdmin
             // 
@@ -812,36 +481,7 @@
             this.buttonAdminAdmin.TabIndex = 4;
             this.buttonAdminAdmin.Text = "Администрация";
             this.buttonAdminAdmin.UseVisualStyleBackColor = true;
-            // 
-            // buttonAuthAdmin
-            // 
-            this.buttonAuthAdmin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonAuthAdmin.FlatAppearance.BorderSize = 0;
-            this.buttonAuthAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAuthAdmin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonAuthAdmin.Location = new System.Drawing.Point(20, 300);
-            this.buttonAuthAdmin.Name = "buttonAuthAdmin";
-            this.buttonAuthAdmin.Size = new System.Drawing.Size(144, 42);
-            this.buttonAuthAdmin.TabIndex = 5;
-            this.buttonAuthAdmin.Text = "Логины";
-            this.buttonAuthAdmin.UseVisualStyleBackColor = true;
-            // 
-            // checkedListBoxGroupStudentAdmin
-            // 
-            this.checkedListBoxGroupStudentAdmin.FormattingEnabled = true;
-            this.checkedListBoxGroupStudentAdmin.Location = new System.Drawing.Point(321, 559);
-            this.checkedListBoxGroupStudentAdmin.Name = "checkedListBoxGroupStudentAdmin";
-            this.checkedListBoxGroupStudentAdmin.Size = new System.Drawing.Size(120, 94);
-            this.checkedListBoxGroupStudentAdmin.TabIndex = 11;
-            // 
-            // labelGroupsAdmin
-            // 
-            this.labelGroupsAdmin.AutoSize = true;
-            this.labelGroupsAdmin.Location = new System.Drawing.Point(318, 535);
-            this.labelGroupsAdmin.Name = "labelGroupsAdmin";
-            this.labelGroupsAdmin.Size = new System.Drawing.Size(44, 13);
-            this.labelGroupsAdmin.TabIndex = 12;
-            this.labelGroupsAdmin.Text = "Группы";
+            this.buttonAdminAdmin.Click += new System.EventHandler(this.buttonAdminAdmin_Click);
             // 
             // FormAdmin
             // 
@@ -853,27 +493,23 @@
             this.Controls.Add(this.panelMainAdmin);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FormAdmin";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Админ-панель";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormAdmin_FormClosed);
+            this.Load += new System.EventHandler(this.FormAdmin_Load);
             this.panelMainAdmin.ResumeLayout(false);
-            this.panelGroupAdmin.ResumeLayout(false);
-            this.panelGroupAdmin.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewGroupAdmin)).EndInit();
-            this.panelAuthorizationAdministrator.ResumeLayout(false);
-            this.panelAuthorizationAdministrator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAuthorizationAdministrator)).EndInit();
-            this.panelWorkersAdministrator.ResumeLayout(false);
-            this.panelWorkersAdministrator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewWorkersAdministrator)).EndInit();
-            this.panelServicesAdministrator.ResumeLayout(false);
-            this.panelServicesAdministrator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewServicesServicesPartsAdministrator)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewServicesPartsAdministrator)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewServicesServicesAdministrator)).EndInit();
+            this.panelAdminsAdmin.ResumeLayout(false);
+            this.panelAdminsAdmin.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAdminsAdmin)).EndInit();
+            this.panelTeachersAdmin.ResumeLayout(false);
+            this.panelTeachersAdmin.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTeacherAdmin)).EndInit();
             this.panelStudentAdmin.ResumeLayout(false);
             this.panelStudentAdmin.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewStudentAdmin)).EndInit();
+            this.panelGroupAdmin.ResumeLayout(false);
+            this.panelGroupAdmin.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewGroupAdmin)).EndInit();
             this.panelSidebarAdmin.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -882,54 +518,13 @@
         #endregion
 
         private System.Windows.Forms.Panel panelMainAdmin;
-        private System.Windows.Forms.Panel panelAuthorizationAdministrator;
-        private System.Windows.Forms.ComboBox comboBoxWorkersWorkersAdministrator;
-        private System.Windows.Forms.ComboBox comboBoxWorkersAccessAdministrator;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.TextBox textBoxAuthorizationPasswordAdministrator;
-        private System.Windows.Forms.Button buttonAuthorizationCreateAdministrator;
-        private System.Windows.Forms.Button buttonAuthorizationDeleteAdministrator;
-        private System.Windows.Forms.Button buttonAuthorizationSaveAdministrator;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.TextBox textBoxAuthorizationLoginAdministrator;
-        private System.Windows.Forms.DataGridView dataGridViewAuthorizationAdministrator;
-        private System.Windows.Forms.Panel panelWorkersAdministrator;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.TextBox textBoxWorkersSalaryAdministrator;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox textBoxWorkersSurnameAdministrator;
-        private System.Windows.Forms.Button buttonWorkersCreateAdministrator;
-        private System.Windows.Forms.Button buttonWorkersDeleteAdministrator;
-        private System.Windows.Forms.Button buttonWorkersSaveAdministrator;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox textBoxWorkersProfessionAdministrator;
+        private System.Windows.Forms.Panel panelTeachersAdmin;
+        private System.Windows.Forms.Button buttonTeacherAddAdmin;
+        private System.Windows.Forms.Button buttonTeacherDeleteAdmin;
+        private System.Windows.Forms.Button buttonTeacherEditAdmin;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox textBoxWorkersNameAdministrator;
-        private System.Windows.Forms.DataGridView dataGridViewWorkersAdministrator;
-        private System.Windows.Forms.Panel panelServicesAdministrator;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBoxServicesPartIDAdministrator;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBoxServicesAmountAdministrator;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox textBoxServicesServiceIDAdministrator;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBoxServicesPriceAdministrator;
-        private System.Windows.Forms.Button buttonServicesCreateLinkAdministrator;
-        private System.Windows.Forms.Button buttonServicesDeleteLinktAdministrator;
-        private System.Windows.Forms.Button buttonServicesAlterLinkAdministrator;
-        private System.Windows.Forms.DataGridView dataGridViewServicesServicesPartsAdministrator;
-        private System.Windows.Forms.DataGridView dataGridViewServicesPartsAdministrator;
-        private System.Windows.Forms.Button buttonServicesCreateServiceAdministrator;
-        private System.Windows.Forms.Button buttonServicesDeleteServiceAdministrator;
-        private System.Windows.Forms.Button buttonServicesSaveServiceAdministrator;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBoxServicesTimeAdministrator;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBoxServicesNameAdministrator;
-        private System.Windows.Forms.DataGridView dataGridViewServicesServicesAdministrator;
+        private System.Windows.Forms.TextBox textBoxTeacherFIOAdmin;
+        private System.Windows.Forms.DataGridView dataGridViewTeacherAdmin;
         private System.Windows.Forms.Panel panelStudentAdmin;
         private System.Windows.Forms.Button buttonStudentCreateAdmin;
         private System.Windows.Forms.Button buttonStudentDeleteAdmin;
@@ -946,7 +541,6 @@
         private System.Windows.Forms.TextBox textBoxGroupFacultyAdmin;
         private System.Windows.Forms.DataGridView dataGridViewGroupAdmin;
         private System.Windows.Forms.Panel panelSidebarAdmin;
-        private System.Windows.Forms.Button buttonAuthAdmin;
         private System.Windows.Forms.Button buttonAdminAdmin;
         private System.Windows.Forms.Button buttonTeachersAdmin;
         private System.Windows.Forms.Button buttonStudentsAdmin;
@@ -954,5 +548,12 @@
         private System.Windows.Forms.TextBox textBoxGroupClassAdmin;
         private System.Windows.Forms.Label labelGroupsAdmin;
         private System.Windows.Forms.CheckedListBox checkedListBoxGroupStudentAdmin;
+        private System.Windows.Forms.Panel panelAdminsAdmin;
+        private System.Windows.Forms.Button buttonAdminsAddAdmin;
+        private System.Windows.Forms.Button buttonAdminsDeleteAdmin;
+        private System.Windows.Forms.Button buttonAdminsEditAdmin;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBoxAdminsFIOAdmin;
+        private System.Windows.Forms.DataGridView dataGridViewAdminsAdmin;
     }
 }
