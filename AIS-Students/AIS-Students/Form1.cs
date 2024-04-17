@@ -70,6 +70,9 @@ namespace AIS_Students
                         this.Hide();
                         break;
                     case 1:
+                        FormTeacher formTeacher = new FormTeacher();
+                        formTeacher.Show();
+                        this.Hide();
                         break;
                     case 2:
                         break;

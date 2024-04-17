@@ -80,10 +80,10 @@
             // 
             // panelMainAdmin
             // 
-            this.panelMainAdmin.Controls.Add(this.panelAdminsAdmin);
-            this.panelMainAdmin.Controls.Add(this.panelTeachersAdmin);
             this.panelMainAdmin.Controls.Add(this.panelStudentAdmin);
             this.panelMainAdmin.Controls.Add(this.panelGroupAdmin);
+            this.panelMainAdmin.Controls.Add(this.panelAdminsAdmin);
+            this.panelMainAdmin.Controls.Add(this.panelTeachersAdmin);
             this.panelMainAdmin.Location = new System.Drawing.Point(189, 0);
             this.panelMainAdmin.Name = "panelMainAdmin";
             this.panelMainAdmin.Size = new System.Drawing.Size(912, 700);
@@ -153,6 +153,7 @@
             // 
             this.dataGridViewAdminsAdmin.AllowUserToDeleteRows = false;
             this.dataGridViewAdminsAdmin.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewAdminsAdmin.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(200)))));
             this.dataGridViewAdminsAdmin.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewAdminsAdmin.Location = new System.Drawing.Point(33, 21);
             this.dataGridViewAdminsAdmin.MultiSelect = false;
@@ -226,6 +227,7 @@
             // 
             this.dataGridViewTeacherAdmin.AllowUserToDeleteRows = false;
             this.dataGridViewTeacherAdmin.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewTeacherAdmin.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(200)))));
             this.dataGridViewTeacherAdmin.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewTeacherAdmin.Location = new System.Drawing.Point(33, 21);
             this.dataGridViewTeacherAdmin.MultiSelect = false;
@@ -309,6 +311,7 @@
             // 
             this.dataGridViewStudentAdmin.AllowUserToDeleteRows = false;
             this.dataGridViewStudentAdmin.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewStudentAdmin.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(200)))));
             this.dataGridViewStudentAdmin.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewStudentAdmin.Location = new System.Drawing.Point(33, 21);
             this.dataGridViewStudentAdmin.MultiSelect = false;
@@ -407,6 +410,7 @@
             // 
             this.dataGridViewGroupAdmin.AllowUserToDeleteRows = false;
             this.dataGridViewGroupAdmin.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewGroupAdmin.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(200)))));
             this.dataGridViewGroupAdmin.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewGroupAdmin.Location = new System.Drawing.Point(33, 21);
             this.dataGridViewGroupAdmin.MultiSelect = false;
