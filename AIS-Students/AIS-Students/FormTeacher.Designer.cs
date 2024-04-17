@@ -33,23 +33,35 @@
             this.buttonMarksTeacher = new System.Windows.Forms.Button();
             this.panelMainTeacher = new System.Windows.Forms.Panel();
             this.panelMarkTeacher = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.checkedListBoxMarkStudentTeacher = new System.Windows.Forms.CheckedListBox();
+            this.checkedListBoxMarkAssignTeacher = new System.Windows.Forms.CheckedListBox();
             this.buttonMarkAddTeacher = new System.Windows.Forms.Button();
+            this.dateTimePickerMarkTeacher = new System.Windows.Forms.DateTimePicker();
             this.buttonMarkDeleteTeacher = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.textBoxMarkMarkTeacher = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.checkedListBoxMarkSubjectTeacher = new System.Windows.Forms.CheckedListBox();
             this.dataGridViewMarkTeacher = new System.Windows.Forms.DataGridView();
-            this.label2 = new System.Windows.Forms.Label();
-            this.dateTimePickerMarkTeacher = new System.Windows.Forms.DateTimePicker();
-            this.checkedListBoxMarkAssignTeacher = new System.Windows.Forms.CheckedListBox();
-            this.checkedListBoxMarkStudentTeacher = new System.Windows.Forms.CheckedListBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.panelAssignTeacher = new System.Windows.Forms.Panel();
+            this.buttonAssignAddTeacher = new System.Windows.Forms.Button();
+            this.buttonAssignDeleteTeacher = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.textBoxAssignMaxMarkTeacher = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.checkedListBoxAssignSubjectTeacher = new System.Windows.Forms.CheckedListBox();
+            this.dataGridViewAssignTeacher = new System.Windows.Forms.DataGridView();
+            this.textBoxAssignNameTeacher = new System.Windows.Forms.TextBox();
             this.panelSidebarAdministrator.SuspendLayout();
             this.panelMainTeacher.SuspendLayout();
             this.panelMarkTeacher.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMarkTeacher)).BeginInit();
+            this.panelAssignTeacher.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAssignTeacher)).BeginInit();
             this.SuspendLayout();
             // 
             // panelSidebarAdministrator
@@ -74,6 +86,7 @@
             this.buttonAssignsTeacher.TabIndex = 2;
             this.buttonAssignsTeacher.Text = "Работы";
             this.buttonAssignsTeacher.UseVisualStyleBackColor = true;
+            this.buttonAssignsTeacher.Click += new System.EventHandler(this.buttonAssignsTeacher_Click);
             // 
             // buttonMarksTeacher
             // 
@@ -90,6 +103,7 @@
             // 
             // panelMainTeacher
             // 
+            this.panelMainTeacher.Controls.Add(this.panelAssignTeacher);
             this.panelMainTeacher.Controls.Add(this.panelMarkTeacher);
             this.panelMainTeacher.Location = new System.Drawing.Point(189, 0);
             this.panelMainTeacher.Name = "panelMainTeacher";
@@ -117,6 +131,35 @@
             this.panelMarkTeacher.TabIndex = 4;
             this.panelMarkTeacher.Visible = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(435, 468);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(43, 13);
+            this.label1.TabIndex = 503;
+            this.label1.Text = "Работа";
+            // 
+            // checkedListBoxMarkStudentTeacher
+            // 
+            this.checkedListBoxMarkStudentTeacher.CheckOnClick = true;
+            this.checkedListBoxMarkStudentTeacher.FormattingEnabled = true;
+            this.checkedListBoxMarkStudentTeacher.Location = new System.Drawing.Point(33, 484);
+            this.checkedListBoxMarkStudentTeacher.Name = "checkedListBoxMarkStudentTeacher";
+            this.checkedListBoxMarkStudentTeacher.Size = new System.Drawing.Size(129, 139);
+            this.checkedListBoxMarkStudentTeacher.TabIndex = 502;
+            this.checkedListBoxMarkStudentTeacher.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.checkedListBox2_ItemCheck);
+            // 
+            // checkedListBoxMarkAssignTeacher
+            // 
+            this.checkedListBoxMarkAssignTeacher.CheckOnClick = true;
+            this.checkedListBoxMarkAssignTeacher.FormattingEnabled = true;
+            this.checkedListBoxMarkAssignTeacher.Location = new System.Drawing.Point(438, 484);
+            this.checkedListBoxMarkAssignTeacher.Name = "checkedListBoxMarkAssignTeacher";
+            this.checkedListBoxMarkAssignTeacher.Size = new System.Drawing.Size(166, 139);
+            this.checkedListBoxMarkAssignTeacher.TabIndex = 501;
+            this.checkedListBoxMarkAssignTeacher.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.checkedListBox1_ItemCheck);
+            // 
             // buttonMarkAddTeacher
             // 
             this.buttonMarkAddTeacher.Location = new System.Drawing.Point(168, 585);
@@ -127,6 +170,13 @@
             this.buttonMarkAddTeacher.UseVisualStyleBackColor = true;
             this.buttonMarkAddTeacher.Click += new System.EventHandler(this.buttonOrdersCreateAdministrator_Click);
             // 
+            // dateTimePickerMarkTeacher
+            // 
+            this.dateTimePickerMarkTeacher.Location = new System.Drawing.Point(303, 484);
+            this.dateTimePickerMarkTeacher.Name = "dateTimePickerMarkTeacher";
+            this.dateTimePickerMarkTeacher.Size = new System.Drawing.Size(129, 20);
+            this.dateTimePickerMarkTeacher.TabIndex = 6;
+            // 
             // buttonMarkDeleteTeacher
             // 
             this.buttonMarkDeleteTeacher.Location = new System.Drawing.Point(303, 585);
@@ -136,6 +186,15 @@
             this.buttonMarkDeleteTeacher.Text = "Удалить выбранную запись";
             this.buttonMarkDeleteTeacher.UseVisualStyleBackColor = true;
             this.buttonMarkDeleteTeacher.Click += new System.EventHandler(this.buttonOrdersDeleteAdministrator_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(300, 468);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(65, 13);
+            this.label2.TabIndex = 500;
+            this.label2.Text = "Дата сдачи";
             // 
             // label4
             // 
@@ -195,50 +254,106 @@
             this.dataGridViewMarkTeacher.TabIndex = 0;
             this.dataGridViewMarkTeacher.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewOrdersAdministrator_CellClick);
             // 
-            // label2
+            // panelAssignTeacher
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(300, 468);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 13);
-            this.label2.TabIndex = 500;
-            this.label2.Text = "Дата сдачи";
+            this.panelAssignTeacher.Controls.Add(this.textBoxAssignNameTeacher);
+            this.panelAssignTeacher.Controls.Add(this.buttonAssignAddTeacher);
+            this.panelAssignTeacher.Controls.Add(this.buttonAssignDeleteTeacher);
+            this.panelAssignTeacher.Controls.Add(this.label8);
+            this.panelAssignTeacher.Controls.Add(this.textBoxAssignMaxMarkTeacher);
+            this.panelAssignTeacher.Controls.Add(this.label9);
+            this.panelAssignTeacher.Controls.Add(this.label10);
+            this.panelAssignTeacher.Controls.Add(this.checkedListBoxAssignSubjectTeacher);
+            this.panelAssignTeacher.Controls.Add(this.dataGridViewAssignTeacher);
+            this.panelAssignTeacher.Location = new System.Drawing.Point(41, 21);
+            this.panelAssignTeacher.Name = "panelAssignTeacher";
+            this.panelAssignTeacher.Size = new System.Drawing.Size(805, 668);
+            this.panelAssignTeacher.TabIndex = 5;
+            this.panelAssignTeacher.Visible = false;
             // 
-            // dateTimePickerMarkTeacher
+            // buttonAssignAddTeacher
             // 
-            this.dateTimePickerMarkTeacher.Location = new System.Drawing.Point(303, 484);
-            this.dateTimePickerMarkTeacher.Name = "dateTimePickerMarkTeacher";
-            this.dateTimePickerMarkTeacher.Size = new System.Drawing.Size(129, 20);
-            this.dateTimePickerMarkTeacher.TabIndex = 6;
+            this.buttonAssignAddTeacher.Location = new System.Drawing.Point(33, 585);
+            this.buttonAssignAddTeacher.Name = "buttonAssignAddTeacher";
+            this.buttonAssignAddTeacher.Size = new System.Drawing.Size(129, 38);
+            this.buttonAssignAddTeacher.TabIndex = 8;
+            this.buttonAssignAddTeacher.Text = "Добавить запись";
+            this.buttonAssignAddTeacher.UseVisualStyleBackColor = true;
+            this.buttonAssignAddTeacher.Click += new System.EventHandler(this.buttonAssignAddTeacher_Click);
             // 
-            // checkedListBoxMarkAssignTeacher
+            // buttonAssignDeleteTeacher
             // 
-            this.checkedListBoxMarkAssignTeacher.CheckOnClick = true;
-            this.checkedListBoxMarkAssignTeacher.FormattingEnabled = true;
-            this.checkedListBoxMarkAssignTeacher.Location = new System.Drawing.Point(438, 484);
-            this.checkedListBoxMarkAssignTeacher.Name = "checkedListBoxMarkAssignTeacher";
-            this.checkedListBoxMarkAssignTeacher.Size = new System.Drawing.Size(166, 139);
-            this.checkedListBoxMarkAssignTeacher.TabIndex = 501;
-            this.checkedListBoxMarkAssignTeacher.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.checkedListBox1_ItemCheck);
+            this.buttonAssignDeleteTeacher.Location = new System.Drawing.Point(168, 585);
+            this.buttonAssignDeleteTeacher.Name = "buttonAssignDeleteTeacher";
+            this.buttonAssignDeleteTeacher.Size = new System.Drawing.Size(129, 38);
+            this.buttonAssignDeleteTeacher.TabIndex = 10;
+            this.buttonAssignDeleteTeacher.Text = "Удалить выбранную запись";
+            this.buttonAssignDeleteTeacher.UseVisualStyleBackColor = true;
+            this.buttonAssignDeleteTeacher.Click += new System.EventHandler(this.buttonAssignDeleteTeacher_Click);
             // 
-            // checkedListBoxMarkStudentTeacher
+            // label8
             // 
-            this.checkedListBoxMarkStudentTeacher.CheckOnClick = true;
-            this.checkedListBoxMarkStudentTeacher.FormattingEnabled = true;
-            this.checkedListBoxMarkStudentTeacher.Location = new System.Drawing.Point(33, 484);
-            this.checkedListBoxMarkStudentTeacher.Name = "checkedListBoxMarkStudentTeacher";
-            this.checkedListBoxMarkStudentTeacher.Size = new System.Drawing.Size(129, 139);
-            this.checkedListBoxMarkStudentTeacher.TabIndex = 502;
-            this.checkedListBoxMarkStudentTeacher.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.checkedListBox2_ItemCheck);
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(165, 468);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(123, 13);
+            this.label8.TabIndex = 8;
+            this.label8.Text = "Максимальная оценка";
             // 
-            // label1
+            // textBoxAssignMaxMarkTeacher
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(435, 468);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(43, 13);
-            this.label1.TabIndex = 503;
-            this.label1.Text = "Работа";
+            this.textBoxAssignMaxMarkTeacher.Location = new System.Drawing.Point(168, 484);
+            this.textBoxAssignMaxMarkTeacher.Name = "textBoxAssignMaxMarkTeacher";
+            this.textBoxAssignMaxMarkTeacher.Size = new System.Drawing.Size(129, 20);
+            this.textBoxAssignMaxMarkTeacher.TabIndex = 4;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(615, 468);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(52, 13);
+            this.label9.TabIndex = 5;
+            this.label9.Text = "Предмет";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(30, 468);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(97, 13);
+            this.label10.TabIndex = 4;
+            this.label10.Text = "Название работы";
+            // 
+            // checkedListBoxAssignSubjectTeacher
+            // 
+            this.checkedListBoxAssignSubjectTeacher.CheckOnClick = true;
+            this.checkedListBoxAssignSubjectTeacher.FormattingEnabled = true;
+            this.checkedListBoxAssignSubjectTeacher.Location = new System.Drawing.Point(618, 484);
+            this.checkedListBoxAssignSubjectTeacher.Name = "checkedListBoxAssignSubjectTeacher";
+            this.checkedListBoxAssignSubjectTeacher.Size = new System.Drawing.Size(166, 139);
+            this.checkedListBoxAssignSubjectTeacher.TabIndex = 1;
+            // 
+            // dataGridViewAssignTeacher
+            // 
+            this.dataGridViewAssignTeacher.AllowUserToDeleteRows = false;
+            this.dataGridViewAssignTeacher.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewAssignTeacher.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(200)))));
+            this.dataGridViewAssignTeacher.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewAssignTeacher.Location = new System.Drawing.Point(33, 21);
+            this.dataGridViewAssignTeacher.MultiSelect = false;
+            this.dataGridViewAssignTeacher.Name = "dataGridViewAssignTeacher";
+            this.dataGridViewAssignTeacher.ReadOnly = true;
+            this.dataGridViewAssignTeacher.Size = new System.Drawing.Size(751, 438);
+            this.dataGridViewAssignTeacher.TabIndex = 0;
+            this.dataGridViewAssignTeacher.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewAssignTeacher_CellClick);
+            // 
+            // textBoxAssignNameTeacher
+            // 
+            this.textBoxAssignNameTeacher.Location = new System.Drawing.Point(33, 484);
+            this.textBoxAssignNameTeacher.Name = "textBoxAssignNameTeacher";
+            this.textBoxAssignNameTeacher.Size = new System.Drawing.Size(129, 20);
+            this.textBoxAssignNameTeacher.TabIndex = 501;
             // 
             // FormTeacher
             // 
@@ -257,6 +372,9 @@
             this.panelMarkTeacher.ResumeLayout(false);
             this.panelMarkTeacher.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMarkTeacher)).EndInit();
+            this.panelAssignTeacher.ResumeLayout(false);
+            this.panelAssignTeacher.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAssignTeacher)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -281,5 +399,15 @@
         private System.Windows.Forms.CheckedListBox checkedListBoxMarkAssignTeacher;
         private System.Windows.Forms.CheckedListBox checkedListBoxMarkStudentTeacher;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panelAssignTeacher;
+        private System.Windows.Forms.TextBox textBoxAssignNameTeacher;
+        private System.Windows.Forms.Button buttonAssignAddTeacher;
+        private System.Windows.Forms.Button buttonAssignDeleteTeacher;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox textBoxAssignMaxMarkTeacher;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.CheckedListBox checkedListBoxAssignSubjectTeacher;
+        private System.Windows.Forms.DataGridView dataGridViewAssignTeacher;
     }
 }

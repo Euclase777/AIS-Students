@@ -22,6 +22,7 @@ namespace AIS_Students
         private void buttonOrdersAdministrator_Click(object sender, EventArgs e)
         {
             panelMarkTeacher.Visible = true;
+            panelAssignTeacher.Visible = false;
             textBoxMarkMarkTeacher.Text = "";
             dateTimePickerMarkTeacher.Value = DateTime.Today;
             checkedListBoxMarkSubjectTeacher.Items.Clear();
@@ -113,6 +114,9 @@ namespace AIS_Students
             foreach (int i in checkedListBoxMarkSubjectTeacher.CheckedIndices)
             {
                 checkedListBoxMarkSubjectTeacher.SetItemCheckState(i, CheckState.Unchecked);
+            }
+            foreach (int i in checkedListBoxMarkAssignTeacher.CheckedIndices)
+            {
                 checkedListBoxMarkAssignTeacher.SetItemCheckState(i, CheckState.Unchecked);
             }
             if (Convert.ToString(dataGridViewMarkTeacher.CurrentRow.Cells[0].Value) != "")
@@ -241,6 +245,113 @@ namespace AIS_Students
                         checkedListBoxMarkStudentTeacher.SetItemChecked(i, false);
                     }
                 }
+            }
+        }
+
+        private void buttonAssignsTeacher_Click(object sender, EventArgs e)
+        {
+            panelAssignTeacher.Visible = true;
+            panelMarkTeacher.Visible = false;
+            textBoxAssignNameTeacher.Text = "";
+            textBoxAssignMaxMarkTeacher.Text = "";
+            checkedListBoxAssignSubjectTeacher.Items.Clear();
+            MySqlConnection conn = DBUtils.GetDBConnection();
+            using (MySqlCommand cmd = new MySqlCommand("SELECT ID_Subject,Name FROM subjects", conn))
+            {
+                cmd.CommandType = CommandType.Text;
+                using (MySqlDataAdapter sda = new MySqlDataAdapter(cmd))
+                {
+                    using (DataTable dt = new DataTable())
+                    {
+                        sda.Fill(dt);
+                        foreach (DataRow row in dt.Rows)
+                        {
+                            checkedListBoxAssignSubjectTeacher.Items.Add(new StringItemWithOldID()
+                            {
+                                OldID = Convert.ToInt16(row[0]),
+                                text = Convert.ToString(row[1])
+                            });
+                        }
+                    }
+                }
+            }
+            using (MySqlCommand cmd = new MySqlCommand("SELECT \r\n    a.ID_Assign, \r\n    a.Name AS 'Работа', \r\n    a.MAX_Mark 'Максимум баллов', \r\n    a.ID_Subject, \r\n    s.Name AS 'Предмет'\r\nFROM \r\n    assignments a\r\n        JOIN \r\n    subjects s ON a.ID_Subject = s.ID_Subject;", conn))
+            {
+                cmd.CommandType = CommandType.Text;
+                using (MySqlDataAdapter sda = new MySqlDataAdapter(cmd))
+                {
+                    using (DataTable dt = new DataTable())
+                    {
+                        sda.Fill(dt);
+                        dataGridViewAssignTeacher.DataSource = dt;
+                        dataGridViewAssignTeacher.Columns[0].Visible = false;
+                        dataGridViewAssignTeacher.Columns[3].Visible = false;
+                    }
+                }
+            }
+        }
+
+        private void dataGridViewAssignTeacher_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            foreach (int i in checkedListBoxAssignSubjectTeacher.CheckedIndices)
+            {
+                checkedListBoxAssignSubjectTeacher.SetItemCheckState(i, CheckState.Unchecked);
+            }
+            if (Convert.ToString(dataGridViewAssignTeacher.CurrentRow.Cells[0].Value) != "")
+            {
+                textBoxAssignNameTeacher.Text = Convert.ToString(dataGridViewAssignTeacher.CurrentRow.Cells[1].Value);
+                textBoxAssignMaxMarkTeacher.Text = Convert.ToString(dataGridViewAssignTeacher.CurrentRow.Cells[2].Value);
+                for (int i = 0; i < checkedListBoxAssignSubjectTeacher.Items.Count; i++)
+                {
+                    if (Convert.ToString(dataGridViewAssignTeacher.CurrentRow.Cells[4].Value) == Convert.ToString(checkedListBoxAssignSubjectTeacher.Items[i]))
+                    {
+                        checkedListBoxAssignSubjectTeacher.SetItemChecked(i, true);
+                    }
+                }
+            }
+            else
+            {
+                textBoxMarkMarkTeacher.Text = "";
+                dateTimePickerMarkTeacher.Value = DateTime.Today;
+                checkedListBoxAssignSubjectTeacher.ClearSelected();
+                foreach (int i in checkedListBoxAssignSubjectTeacher.CheckedIndices)
+                {
+                    checkedListBoxAssignSubjectTeacher.SetItemCheckState(i, CheckState.Unchecked);
+                }
+            }
+        }
+
+        private void buttonAssignAddTeacher_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Вы уверены, что хотите добавить работу?", "Подтверждение", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                MySqlConnection conn = DBUtils.GetDBConnection();
+                MySqlCommand cmd = new MySqlCommand("INSERT INTO `assignments` (`Name`, `MAX_Mark`, `ID_Subject`) VALUES (@name, @mark, @subject)", conn);
+                cmd.Parameters.AddWithValue("name", textBoxAssignNameTeacher.Text);
+                cmd.Parameters.AddWithValue("mark", textBoxAssignMaxMarkTeacher.Text);
+                foreach (StringItemWithOldID item in checkedListBoxAssignSubjectTeacher.CheckedItems)
+                {
+                    cmd.Parameters.AddWithValue("subject", item.OldID.ToString());
+                }
+                conn.Open();
+                cmd.ExecuteNonQuery();
+                conn.Close();
+                buttonAssignsTeacher.PerformClick();
+            }
+        }
+
+        private void buttonAssignDeleteTeacher_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Вы уверены что хотите удалить выбранную работу из списка?", "Подтверждение", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                MySqlConnection conn = DBUtils.GetDBConnection();
+                MySqlCommand cmd = new MySqlCommand("DELETE FROM `assignments` WHERE ID_Assign = @id", conn);
+                conn.Open();
+                cmd.Parameters.AddWithValue("id", Convert.ToString(dataGridViewAssignTeacher.CurrentRow.Cells[0].Value));
+                cmd.ExecuteNonQuery();
+                buttonAssignsTeacher.PerformClick();
             }
         }
     }
