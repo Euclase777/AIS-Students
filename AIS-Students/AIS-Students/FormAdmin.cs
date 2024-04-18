@@ -36,7 +36,7 @@ namespace AIS_Students
 
         private void buttonGroupCreateAdmin_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("Вы уверены, что хотите создать новый заказ используя введенные данные?", "Подтверждение", MessageBoxButtons.YesNo);
+            DialogResult result = MessageBox.Show("Вы уверены, что хотите добавить группу, используя введенные данные?", "Подтверждение", MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
             {
                 MySqlConnection conn = DBUtils.GetDBConnection();
@@ -79,7 +79,7 @@ namespace AIS_Students
 
         private void buttonGroupDeleteAdmin_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("Вы уверены что хотите удалить выбранный заказ?", "Подтверждение", MessageBoxButtons.YesNo);
+            DialogResult result = MessageBox.Show("Вы уверены что хотите удалить выбранную группу?", "Подтверждение", MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
             {
                 MySqlConnection conn = DBUtils.GetDBConnection();
