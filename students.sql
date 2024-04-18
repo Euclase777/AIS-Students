@@ -10,11 +10,8 @@ Target Server Type    : MYSQL
 Target Server Version : 50525
 File Encoding         : 65001
 
-Date: 2024-04-11 01:38:06
+Date: 2024-04-18 18:57:19
 */
-CREATE DATABASE IF NOT EXISTS students CHARACTER SET utf8 COLLATE utf8_general_ci;
-
-USE students;
 
 SET FOREIGN_KEY_CHECKS=0;
 
@@ -26,15 +23,17 @@ CREATE TABLE `assignments` (
   `ID_Assign` int(255) unsigned NOT NULL AUTO_INCREMENT,
   `Name` varchar(255) NOT NULL,
   `MAX_Mark` int(255) unsigned NOT NULL,
-  `ID_Subject` int(255) unsigned NOT NULL,
+  `ID_Subject` int(255) unsigned DEFAULT NULL,
   PRIMARY KEY (`ID_Assign`),
   KEY `FK_ID_Subject` (`ID_Subject`) USING BTREE,
   CONSTRAINT `subj-assign` FOREIGN KEY (`ID_Subject`) REFERENCES `subjects` (`ID_Subject`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of assignments
 -- ----------------------------
+INSERT INTO `assignments` VALUES ('1', 'Лабораторная 123', '25', '1');
+INSERT INTO `assignments` VALUES ('2', 'Проектная работа', '40', '2');
 
 -- ----------------------------
 -- Table structure for auth
@@ -43,54 +42,18 @@ DROP TABLE IF EXISTS `auth`;
 CREATE TABLE `auth` (
   `Login` varchar(255) NOT NULL,
   `Password` varchar(255) NOT NULL,
-  `ID_User` int(255) unsigned NOT NULL,
+  `ID_User` int(255) unsigned NOT NULL AUTO_INCREMENT,
   `Access_level` int(255) NOT NULL,
   PRIMARY KEY (`Login`,`Password`),
   KEY `FK_ID_User` (`ID_User`),
   CONSTRAINT `FK_ID_User` FOREIGN KEY (`ID_User`) REFERENCES `users` (`ID_User`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of auth
 -- ----------------------------
 INSERT INTO `auth` VALUES ('Admin', 'Password', '1', '0');
-
--- ----------------------------
--- Table structure for exam-marks
--- ----------------------------
-DROP TABLE IF EXISTS `exam-marks`;
-CREATE TABLE `exam-marks` (
-  `ID` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `ID_Student` int(10) unsigned NOT NULL,
-  `ID_Exam` int(10) unsigned NOT NULL,
-  `Mark` int(11) DEFAULT NULL,
-  `Date` date NOT NULL,
-  PRIMARY KEY (`ID`),
-  KEY `exam-marks` (`ID_Exam`),
-  KEY `student-marks` (`ID_Student`),
-  CONSTRAINT `student-marks` FOREIGN KEY (`ID_Student`) REFERENCES `students` (`ID_Student`) ON DELETE CASCADE ON UPDATE CASCADE,
-  CONSTRAINT `exam-marks` FOREIGN KEY (`ID_Exam`) REFERENCES `exams` (`ID_Exam`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- ----------------------------
--- Records of exam-marks
--- ----------------------------
-
--- ----------------------------
--- Table structure for exams
--- ----------------------------
-DROP TABLE IF EXISTS `exams`;
-CREATE TABLE `exams` (
-  `ID_Exam` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `Exam` varchar(255) DEFAULT NULL,
-  `MAX_Mark` int(11) DEFAULT NULL,
-  PRIMARY KEY (`ID_Exam`),
-  KEY `ID_Exam` (`ID_Exam`) USING BTREE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- ----------------------------
--- Records of exams
--- ----------------------------
+INSERT INTO `auth` VALUES ('Teacher', 'Password', '2', '1');
 
 -- ----------------------------
 -- Table structure for groups
@@ -126,13 +89,14 @@ CREATE TABLE `student-assign` (
   PRIMARY KEY (`ID`),
   KEY `FK_ID_Student` (`ID_Student`) USING BTREE,
   KEY `FK_ID_Assign` (`ID_Assign`) USING BTREE,
-  CONSTRAINT `student-assign` FOREIGN KEY (`ID_Student`) REFERENCES `students` (`ID_Student`) ON DELETE CASCADE ON UPDATE CASCADE,
-  CONSTRAINT `assign-student` FOREIGN KEY (`ID_Assign`) REFERENCES `assignments` (`ID_Assign`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  CONSTRAINT `assign-student` FOREIGN KEY (`ID_Assign`) REFERENCES `assignments` (`ID_Assign`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `student-assign` FOREIGN KEY (`ID_Student`) REFERENCES `students` (`ID_Student`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of student-assign
 -- ----------------------------
+INSERT INTO `student-assign` VALUES ('5', '4', '2', '20', '2024-04-16');
 
 -- ----------------------------
 -- Table structure for students
@@ -146,7 +110,7 @@ CREATE TABLE `students` (
   KEY `FK_ID_Student` (`ID_Student`) USING BTREE,
   KEY `group-student` (`ID_Group`),
   CONSTRAINT `group-student` FOREIGN KEY (`ID_Group`) REFERENCES `groups` (`ID_Group`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of students
@@ -164,11 +128,15 @@ CREATE TABLE `subjects` (
   `Name` varchar(255) NOT NULL,
   PRIMARY KEY (`ID_Subject`),
   KEY `FK_ID_Subject` (`ID_Subject`) USING BTREE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of subjects
 -- ----------------------------
+INSERT INTO `subjects` VALUES ('1', 'Информационные технологии');
+INSERT INTO `subjects` VALUES ('2', 'Проектная деятельность');
+INSERT INTO `subjects` VALUES ('3', 'Облачные технологии и услуги');
+INSERT INTO `subjects` VALUES ('4', 'Облачные базы данных');
 
 -- ----------------------------
 -- Table structure for sysadmins
