@@ -177,17 +177,17 @@
       <erd-chen-attribute type="key" />
     </item>
     <item id="f1202b1e10ce44128fdc65aff88d0d5a" cid="ATC019" type="erd-chen-attribute-connector" creator="" creation-date="04/10/2024 19:59:04" from="da088e30fcef49c6bcfc1344211bf80a" to="05a6f0478a06465884a58e0ee7b264ed" />
-    <item id="bd995d2a18494b60ba1c8f5faa9c20a0" cid="ATC002" type="erd-chen-attribute-connector" creator="" creation-date="04/10/2024 19:44:37" from="c45b95b1500648daa2294ff5164d37e1" to="67dcb287ce984d1491fc1c6585554e39" />
     <item id="bd7e3ca8c9a1459c9ac715cc168c2414" cid="ATT013" type="erd-chen-attribute" name="Номер группы" creator="" creation-date="04/10/2024 19:55:30">
       <erd-chen-attribute type="standard" />
     </item>
+    <item id="bd995d2a18494b60ba1c8f5faa9c20a0" cid="ATC002" type="erd-chen-attribute-connector" creator="" creation-date="04/10/2024 19:44:37" from="c45b95b1500648daa2294ff5164d37e1" to="67dcb287ce984d1491fc1c6585554e39" />
     <item id="67dcb287ce984d1491fc1c6585554e39" cid="ATT002" type="erd-chen-attribute" name="Пароль" creator="" creation-date="04/10/2024 19:44:37">
       <erd-chen-attribute type="key" />
     </item>
+    <item id="6967a0e424174755b4cb47c928d56713" cid="ATC014" type="erd-chen-attribute-connector" creator="" creation-date="04/10/2024 19:55:37" from="e3ae9b45b99b49d2a924ccd6b00b7111" to="11cb129049a84cfab0b38305d029f0aa" />
     <item id="d399e2fe7f354a00a99cacbf31c86d69" cid="ATT006" type="erd-chen-attribute" name="ID" creator="" creation-date="04/10/2024 19:49:53">
       <erd-chen-attribute type="key" />
     </item>
-    <item id="6967a0e424174755b4cb47c928d56713" cid="ATC014" type="erd-chen-attribute-connector" creator="" creation-date="04/10/2024 19:55:37" from="e3ae9b45b99b49d2a924ccd6b00b7111" to="11cb129049a84cfab0b38305d029f0aa" />
     <item id="bc6a1de9a55a4387a3aaee6a0c21c8d8" cid="ATC008" type="erd-chen-attribute-connector" creator="" creation-date="04/10/2024 19:50:54" from="c11463fbef8c4a7e8bfab26dca6506e0" to="4d9ce8d2bdbf45909b166786db9181fa" />
   </items>
   <models>
@@ -204,7 +204,7 @@
       </meta>
       <abstract-items />
       <sub-models />
-      <diagram type="entity-relationship" id="p97bd1065176143c8b3f601fe4ac0c5fa_660232474" name="Data_scheme" order-index="2" overview-order-index="0" uid="" name-style="" auto-routed-paths="false" default-line-style="default" view-location="10,100">
+      <diagram type="entity-relationship" id="p97bd1065176143c8b3f601fe4ac0c5fa_660232474" name="Data_scheme" order-index="2" overview-order-index="0" uid="" name-style="" auto-routed-paths="false" default-line-style="default" view-location="42,-280" zoom="0.8">
         <style>
           <background-color index="1" color="#FFFFFFFF" />
           <background-color index="2" color="#FFFFFFFF" />
@@ -240,6 +240,28 @@
             </attributes>
           </item>
           <item id="38604fce1a0844c9aa1a4df278e048cd" cid="REL006" type="erd-relationship" creator="" creation-date="04/10/2024 19:34:17" from="81b7f1b2569542bb8c29e02770fa680e" to="f225ea0884674262bbd67a9dfb6ccfe6">
+            <style style-name="Custom" shadow-type="smooth" shadow-offset="1,1" shadow-visible="true" shadow-color="#32000000" gloss-effect="rounded" wrap-name-text="true" wrap-other-text="true" padding="1" margin="1" glow-color="#FFFFFF" accuracy="0.9">
+              <text-style type="name" color="#000000" font="Verdana;10;B" />
+              <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
+              <text-style type="text" color="#000000" font="Verdana;9;" horizontal-alignment="left" />
+              <text-style type="tagged-value" color="#1E1E1E" font="Verdana;9;I" />
+              <text-style type="stereotype" color="#1E1E1E" font="Verdana;9;I" />
+              <background type="forward-diagonal" colors="#FFFFFF,#EBEBEB" />
+              <border color="#000000" dash-style="LongDash" />
+              <label-connector color="#80000000" dash-style="Dash" />
+              <alternate-styles>
+                <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="1,1" shadow-color="#32000000" gloss-effect="rounded" wrap-name-text="true" wrap-other-text="true" padding="1" margin="1" glow-color="#FFFFFF" accuracy="0.9">
+                  <text-style type="name" color="#000000" font="Verdana;10;B" />
+                  <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
+                  <text-style type="text" color="#000000" font="Verdana;9;" horizontal-alignment="left" />
+                  <text-style type="tagged-value" color="#1E1E1E" font="Verdana;9;I" />
+                  <text-style type="stereotype" color="#1E1E1E" font="Verdana;9;I" />
+                  <background type="vertical-linear" colors="#1E90FF,#87CEFA" />
+                  <border color="#00008B" />
+                  <label-connector color="#000000" />
+                </alternate-style>
+              </alternate-styles>
+            </style>
             <erd-relation type="Identifying" multiplicity-from="1" multiplicity-to="1..*">
               <attribute-pairs>
                 <attribute-pair from-attribute="a1f1f4fabe0034c82aad9f991a9828263687" to-attribute="adcb320f53686475682be8a8b1c130d1e630" />
@@ -257,6 +279,28 @@
             </attributes>
           </item>
           <item id="ece8351563f543d2ad97a0796c2b3471" cid="REL015" type="erd-relationship" creator="" creation-date="04/11/2024 01:09:39" from="67673f2b1be14763884435ca32004086" to="9fea5bba720241719c48f62ed3a46b6d">
+            <style style-name="Custom" shadow-type="smooth" shadow-offset="1,1" shadow-visible="true" shadow-color="#32000000" gloss-effect="rounded" wrap-name-text="true" wrap-other-text="true" padding="1" margin="1" glow-color="#FFFFFF" accuracy="0.9">
+              <text-style type="name" color="#000000" font="Verdana;10;B" />
+              <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
+              <text-style type="text" color="#000000" font="Verdana;9;" horizontal-alignment="left" />
+              <text-style type="tagged-value" color="#1E1E1E" font="Verdana;9;I" />
+              <text-style type="stereotype" color="#1E1E1E" font="Verdana;9;I" />
+              <background type="forward-diagonal" colors="#FFFFFF,#EBEBEB" />
+              <border color="#000000" dash-style="LongDash" />
+              <label-connector color="#80000000" dash-style="Dash" />
+              <alternate-styles>
+                <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="1,1" shadow-color="#32000000" gloss-effect="rounded" wrap-name-text="true" wrap-other-text="true" padding="1" margin="1" glow-color="#FFFFFF" accuracy="0.9">
+                  <text-style type="name" color="#000000" font="Verdana;10;B" />
+                  <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
+                  <text-style type="text" color="#000000" font="Verdana;9;" horizontal-alignment="left" />
+                  <text-style type="tagged-value" color="#1E1E1E" font="Verdana;9;I" />
+                  <text-style type="stereotype" color="#1E1E1E" font="Verdana;9;I" />
+                  <background type="vertical-linear" colors="#1E90FF,#87CEFA" />
+                  <border color="#00008B" />
+                  <label-connector color="#000000" />
+                </alternate-style>
+              </alternate-styles>
+            </style>
             <erd-relation type="Identifying" multiplicity-from="1" multiplicity-to="1">
               <attribute-pairs>
                 <attribute-pair from-attribute="a73976f55045649e2bf3dcd67d20779a593" to-attribute="b979d5ee938a4fff8d6c691f06ec0794" />
@@ -264,6 +308,28 @@
             </erd-relation>
           </item>
           <item id="3d7c1ce7d1d64502bcaed8195351e16f" cid="REL002" type="erd-relationship" creator="" creation-date="04/10/2024 19:22:38" from="f225ea0884674262bbd67a9dfb6ccfe6" to="c5d69bb227d5488ebd12ed5318d0de9d">
+            <style style-name="Custom" shadow-type="smooth" shadow-offset="1,1" shadow-visible="true" shadow-color="#32000000" gloss-effect="rounded" wrap-name-text="true" wrap-other-text="true" padding="1" margin="1" glow-color="#FFFFFF" accuracy="0.9">
+              <text-style type="name" color="#000000" font="Verdana;10;B" />
+              <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
+              <text-style type="text" color="#000000" font="Verdana;9;" horizontal-alignment="left" />
+              <text-style type="tagged-value" color="#1E1E1E" font="Verdana;9;I" />
+              <text-style type="stereotype" color="#1E1E1E" font="Verdana;9;I" />
+              <background type="forward-diagonal" colors="#FFFFFF,#EBEBEB" />
+              <border color="#000000" dash-style="LongDash" />
+              <label-connector color="#80000000" dash-style="Dash" />
+              <alternate-styles>
+                <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="1,1" shadow-color="#32000000" gloss-effect="rounded" wrap-name-text="true" wrap-other-text="true" padding="1" margin="1" glow-color="#FFFFFF" accuracy="0.9">
+                  <text-style type="name" color="#000000" font="Verdana;10;B" />
+                  <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
+                  <text-style type="text" color="#000000" font="Verdana;9;" horizontal-alignment="left" />
+                  <text-style type="tagged-value" color="#1E1E1E" font="Verdana;9;I" />
+                  <text-style type="stereotype" color="#1E1E1E" font="Verdana;9;I" />
+                  <background type="vertical-linear" colors="#1E90FF,#87CEFA" />
+                  <border color="#00008B" />
+                  <label-connector color="#000000" />
+                </alternate-style>
+              </alternate-styles>
+            </style>
             <erd-relation type="Identifying" multiplicity-from="*" multiplicity-to="1">
               <attribute-pairs>
                 <attribute-pair from-attribute="a7f4ea06afb144511adeae02f9d5007c1790" to-attribute="ade36fb31703746de91becad4020b19a2974" />
@@ -278,6 +344,28 @@
             </attributes>
           </item>
           <item id="526895e121c546949b0fdaec0e4ff606" cid="REL010" type="erd-relationship" creator="" creation-date="04/10/2024 20:01:57" from="5a7908581c9b494096cef4c5571577a9" to="81b7f1b2569542bb8c29e02770fa680e">
+            <style style-name="Custom" shadow-type="smooth" shadow-offset="1,1" shadow-visible="true" shadow-color="#32000000" gloss-effect="rounded" wrap-name-text="true" wrap-other-text="true" padding="1" margin="1" glow-color="#FFFFFF" accuracy="0.9">
+              <text-style type="name" color="#000000" font="Verdana;10;B" />
+              <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
+              <text-style type="text" color="#000000" font="Verdana;9;" horizontal-alignment="left" />
+              <text-style type="tagged-value" color="#1E1E1E" font="Verdana;9;I" />
+              <text-style type="stereotype" color="#1E1E1E" font="Verdana;9;I" />
+              <background type="forward-diagonal" colors="#FFFFFF,#EBEBEB" />
+              <border color="#000000" dash-style="LongDash" />
+              <label-connector color="#80000000" dash-style="Dash" />
+              <alternate-styles>
+                <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="1,1" shadow-color="#32000000" gloss-effect="rounded" wrap-name-text="true" wrap-other-text="true" padding="1" margin="1" glow-color="#FFFFFF" accuracy="0.9">
+                  <text-style type="name" color="#000000" font="Verdana;10;B" />
+                  <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
+                  <text-style type="text" color="#000000" font="Verdana;9;" horizontal-alignment="left" />
+                  <text-style type="tagged-value" color="#1E1E1E" font="Verdana;9;I" />
+                  <text-style type="stereotype" color="#1E1E1E" font="Verdana;9;I" />
+                  <background type="vertical-linear" colors="#1E90FF,#87CEFA" />
+                  <border color="#00008B" />
+                  <label-connector color="#000000" />
+                </alternate-style>
+              </alternate-styles>
+            </style>
             <erd-relation type="Identifying" multiplicity-from="1" multiplicity-to="1..*">
               <attribute-pairs>
                 <attribute-pair from-attribute="a2b9af61cda4e4f418e4be173b1b40134111" to-attribute="a4bcbf715e20e4a90b180485ad950365c431" />
@@ -285,6 +373,28 @@
             </erd-relation>
           </item>
           <item id="7f0cad70247c472bb2c51449d63ee1fe" cid="REL003" type="erd-relationship" creator="" creation-date="04/10/2024 19:23:23" from="c5d69bb227d5488ebd12ed5318d0de9d" to="583e9860c9d3493590ae09b76236d0da">
+            <style style-name="Custom" shadow-type="smooth" shadow-offset="1,1" shadow-visible="true" shadow-color="#32000000" gloss-effect="rounded" wrap-name-text="true" wrap-other-text="true" padding="1" margin="1" glow-color="#FFFFFF" accuracy="0.9">
+              <text-style type="name" color="#000000" font="Verdana;10;B" />
+              <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
+              <text-style type="text" color="#000000" font="Verdana;9;" horizontal-alignment="left" />
+              <text-style type="tagged-value" color="#1E1E1E" font="Verdana;9;I" />
+              <text-style type="stereotype" color="#1E1E1E" font="Verdana;9;I" />
+              <background type="forward-diagonal" colors="#FFFFFF,#EBEBEB" />
+              <border color="#000000" dash-style="LongDash" />
+              <label-connector color="#80000000" dash-style="Dash" />
+              <alternate-styles>
+                <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="1,1" shadow-color="#32000000" gloss-effect="rounded" wrap-name-text="true" wrap-other-text="true" padding="1" margin="1" glow-color="#FFFFFF" accuracy="0.9">
+                  <text-style type="name" color="#000000" font="Verdana;10;B" />
+                  <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
+                  <text-style type="text" color="#000000" font="Verdana;9;" horizontal-alignment="left" />
+                  <text-style type="tagged-value" color="#1E1E1E" font="Verdana;9;I" />
+                  <text-style type="stereotype" color="#1E1E1E" font="Verdana;9;I" />
+                  <background type="vertical-linear" colors="#1E90FF,#87CEFA" />
+                  <border color="#00008B" />
+                  <label-connector color="#000000" />
+                </alternate-style>
+              </alternate-styles>
+            </style>
             <erd-relation type="Identifying" multiplicity-from="*" multiplicity-to="1">
               <attribute-pairs>
                 <attribute-pair from-attribute="abbdfe54f3aa84982ae209e4292bc72f7399" to-attribute="ab62c44d366644091a76afcc61e30f956679" />
@@ -300,6 +410,28 @@
             </attributes>
           </item>
           <item id="fc6c2824f4c34b949e45dd781b17ddfe" cid="REL012" type="erd-relationship" creator="" creation-date="04/11/2024 01:09:26" from="c5d69bb227d5488ebd12ed5318d0de9d" to="67673f2b1be14763884435ca32004086">
+            <style style-name="Custom" shadow-type="smooth" shadow-offset="1,1" shadow-visible="true" shadow-color="#32000000" gloss-effect="rounded" wrap-name-text="true" wrap-other-text="true" padding="1" margin="1" glow-color="#FFFFFF" accuracy="0.9">
+              <text-style type="name" color="#000000" font="Verdana;10;B" />
+              <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
+              <text-style type="text" color="#000000" font="Verdana;9;" horizontal-alignment="left" />
+              <text-style type="tagged-value" color="#1E1E1E" font="Verdana;9;I" />
+              <text-style type="stereotype" color="#1E1E1E" font="Verdana;9;I" />
+              <background type="forward-diagonal" colors="#FFFFFF,#EBEBEB" />
+              <border color="#000000" dash-style="LongDash" />
+              <label-connector color="#80000000" dash-style="Dash" />
+              <alternate-styles>
+                <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="1,1" shadow-color="#32000000" gloss-effect="rounded" wrap-name-text="true" wrap-other-text="true" padding="1" margin="1" glow-color="#FFFFFF" accuracy="0.9">
+                  <text-style type="name" color="#000000" font="Verdana;10;B" />
+                  <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
+                  <text-style type="text" color="#000000" font="Verdana;9;" horizontal-alignment="left" />
+                  <text-style type="tagged-value" color="#1E1E1E" font="Verdana;9;I" />
+                  <text-style type="stereotype" color="#1E1E1E" font="Verdana;9;I" />
+                  <background type="vertical-linear" colors="#1E90FF,#87CEFA" />
+                  <border color="#00008B" />
+                  <label-connector color="#000000" />
+                </alternate-style>
+              </alternate-styles>
+            </style>
             <erd-relation type="Identifying" multiplicity-from="1" multiplicity-to="0..1">
               <attribute-pairs>
                 <attribute-pair from-attribute="ade36fb31703746de91becad4020b19a2974" to-attribute="a92a2597f5f4a46948f8b4fc21fa81b2e119" />
@@ -314,9 +446,60 @@
             </attributes>
           </item>
           <item id="2360787aa1454ce2897b9f5d65393f66" cid="REL009" type="erd-relationship" creator="" creation-date="04/10/2024 19:45:53" from="67673f2b1be14763884435ca32004086" to="e1bd26854a7848469e52ffbbdd41332f">
+            <style style-name="Custom" shadow-type="smooth" shadow-offset="1,1" shadow-visible="true" shadow-color="#32000000" gloss-effect="rounded" wrap-name-text="true" wrap-other-text="true" padding="1" margin="1" glow-color="#FFFFFF" accuracy="0.9">
+              <text-style type="name" color="#000000" font="Verdana;10;B" />
+              <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
+              <text-style type="text" color="#000000" font="Verdana;9;" horizontal-alignment="left" />
+              <text-style type="tagged-value" color="#1E1E1E" font="Verdana;9;I" />
+              <text-style type="stereotype" color="#1E1E1E" font="Verdana;9;I" />
+              <background type="forward-diagonal" colors="#FFFFFF,#EBEBEB" />
+              <border color="#000000" dash-style="LongDash" />
+              <label-connector color="#80000000" dash-style="Dash" />
+              <alternate-styles>
+                <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="1,1" shadow-color="#32000000" gloss-effect="rounded" wrap-name-text="true" wrap-other-text="true" padding="1" margin="1" glow-color="#FFFFFF" accuracy="0.9">
+                  <text-style type="name" color="#000000" font="Verdana;10;B" />
+                  <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
+                  <text-style type="text" color="#000000" font="Verdana;9;" horizontal-alignment="left" />
+                  <text-style type="tagged-value" color="#1E1E1E" font="Verdana;9;I" />
+                  <text-style type="stereotype" color="#1E1E1E" font="Verdana;9;I" />
+                  <background type="vertical-linear" colors="#1E90FF,#87CEFA" />
+                  <border color="#00008B" />
+                  <label-connector color="#000000" />
+                </alternate-style>
+              </alternate-styles>
+            </style>
             <erd-relation type="Identifying" multiplicity-from="0..1" multiplicity-to="1">
               <attribute-pairs>
                 <attribute-pair from-attribute="ae973804fd78e4047ae285597ae380e45109" to-attribute="ae17a2c1ec41e400a88cfa7f19108cc37711" />
+              </attribute-pairs>
+            </erd-relation>
+          </item>
+          <item id="97c43bc1b23a450d9ff05ecd1fda9fa5" cid="REL008" type="erd-relationship" creator="" creation-date="04/10/2024 19:37:54" from="63a7c1752b2946ac9523c81dfc28344e" to="67673f2b1be14763884435ca32004086">
+            <style style-name="Custom" shadow-type="smooth" shadow-offset="1,1" shadow-visible="true" shadow-color="#32000000" gloss-effect="rounded" wrap-name-text="true" wrap-other-text="true" padding="1" margin="1" glow-color="#FFFFFF" accuracy="0.9">
+              <text-style type="name" color="#000000" font="Verdana;10;B" />
+              <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
+              <text-style type="text" color="#000000" font="Verdana;9;" horizontal-alignment="left" />
+              <text-style type="tagged-value" color="#1E1E1E" font="Verdana;9;I" />
+              <text-style type="stereotype" color="#1E1E1E" font="Verdana;9;I" />
+              <background type="forward-diagonal" colors="#FFFFFF,#EBEBEB" />
+              <border color="#000000" dash-style="LongDash" />
+              <label-connector color="#80000000" dash-style="Dash" />
+              <alternate-styles>
+                <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="1,1" shadow-color="#32000000" gloss-effect="rounded" wrap-name-text="true" wrap-other-text="true" padding="1" margin="1" glow-color="#FFFFFF" accuracy="0.9">
+                  <text-style type="name" color="#000000" font="Verdana;10;B" />
+                  <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
+                  <text-style type="text" color="#000000" font="Verdana;9;" horizontal-alignment="left" />
+                  <text-style type="tagged-value" color="#1E1E1E" font="Verdana;9;I" />
+                  <text-style type="stereotype" color="#1E1E1E" font="Verdana;9;I" />
+                  <background type="vertical-linear" colors="#1E90FF,#87CEFA" />
+                  <border color="#00008B" />
+                  <label-connector color="#000000" />
+                </alternate-style>
+              </alternate-styles>
+            </style>
+            <erd-relation type="Identifying" multiplicity-from="1" multiplicity-to="0..1">
+              <attribute-pairs>
+                <attribute-pair from-attribute="a6aa8b8a6174c45ec8a29f0edb577e82a663" to-attribute="a60e4403e1ed84f1b9d16fca6a57dd781705" />
               </attribute-pairs>
             </erd-relation>
           </item>
@@ -326,13 +509,6 @@
               <attribute uid="ae17a2c1ec41e400a88cfa7f19108cc37711" cid="EA041" name="ID_Sysadmin" type="" type-id="" primary-key="true" nullable="false" creation-date="04/10/2024 19:45:41" />
               <attribute uid="a7eb77549c5b74707913590190ca5596b935" cid="EA042" name="FIO" type="" type-id="" nullable="false" creation-date="04/10/2024 19:45:46" />
             </attributes>
-          </item>
-          <item id="97c43bc1b23a450d9ff05ecd1fda9fa5" cid="REL008" type="erd-relationship" creator="" creation-date="04/10/2024 19:37:54" from="63a7c1752b2946ac9523c81dfc28344e" to="67673f2b1be14763884435ca32004086">
-            <erd-relation type="Identifying" multiplicity-from="1" multiplicity-to="0..1">
-              <attribute-pairs>
-                <attribute-pair from-attribute="a6aa8b8a6174c45ec8a29f0edb577e82a663" to-attribute="a60e4403e1ed84f1b9d16fca6a57dd781705" />
-              </attribute-pairs>
-            </erd-relation>
           </item>
           <item id="583e9860c9d3493590ae09b76236d0da" cid="ENT011" type="erd-entity" name="Groups" creator="" creation-date="04/10/2024 19:23:47">
             <entity description="" />
@@ -455,7 +631,7 @@
           </item>
         </layer>
       </diagram>
-      <diagram type="chen-entity-relationship" id="p3908eeade12444258ab6232f2eeb1fd9_861284643" name="Logic_scheme" order-index="3" overview-order-index="1" uid="" name-style="" auto-routed-paths="false" default-line-style="default" view-location="0,168" zoom="0.6">
+      <diagram type="chen-entity-relationship" id="p3908eeade12444258ab6232f2eeb1fd9_861284643" name="Logic_scheme" order-index="3" overview-order-index="1" uid="" name-style="" auto-routed-paths="false" default-line-style="default" view-location="101,212" zoom="0.6">
         <style>
           <background-color index="1" color="#FFFFFFFF" />
           <background-color index="2" color="#FFFFFFFF" />
