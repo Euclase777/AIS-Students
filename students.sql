@@ -14,7 +14,7 @@ Date: 2024-04-18 18:57:19
 */
 
 SET FOREIGN_KEY_CHECKS=0;
-
+USE students;
 -- ----------------------------
 -- Table structure for assignments
 -- ----------------------------
